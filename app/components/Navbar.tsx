@@ -6,18 +6,17 @@ import { useAuth } from "@/app/(context)/authContext";
 import { useAuthMutation } from "@/hooks/useAuthMutation";
 import { useUserName } from "@/hooks/useUserName";
 import { useHandleRoute } from "@/hooks/useHandleRoute";
+import { useAuthModal } from "@/hooks/useAuthModal";
 
 const Navbar = () => {
   const { user } = useAuth();
   const { logout } = useAuthMutation();
-  const [isAuthModalOpen, setIsAuthModalOpen] = React.useState(false);
-  const {handleRoute} = useHandleRoute()
-
-  const handleLoginClick = () => setIsAuthModalOpen(!isAuthModalOpen);
+  const { handleRoute } = useHandleRoute();
+  const { isOpen, openModal, closeModal } = useAuthModal();
 
   const handleLogout = () => {
     logout.mutate(undefined, {});
-    handleRoute("")
+    handleRoute("");
   };
 
   const userName = useUserName();
@@ -39,20 +38,15 @@ const Navbar = () => {
           </>
         ) : (
           <button
-            onClick={handleLoginClick}
-            className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition"
+            onClick={openModal}
+            className="bg-linear-to-r from-brand-primary to-brand-secondary text-white px-6 py-3 rounded-xl font-semibold shadow-md hover:opacity-90 transition-all duration-200"
           >
             Anmelden
           </button>
         )}
       </div>
 
-      {isAuthModalOpen && (
-        <AuthModal
-          isOpen={isAuthModalOpen}
-          onClose={() => setIsAuthModalOpen(false)}
-        />
-      )}
+      {isOpen && <AuthModal isOpen={isOpen} onClose={() => closeModal()} />}
     </header>
   );
 };

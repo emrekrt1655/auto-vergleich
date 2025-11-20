@@ -6,6 +6,7 @@ import { ReactQueryProvider } from "./(context)/reactQueryProvider";
 import { AuthProvider } from "./(context)/authContext";
 import Navbar from "./components/Navbar";
 import { Toast } from "./components/Toast";
+import FooterSection from "./components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,6 +38,7 @@ export default function RootLayout({
             <AuthProvider>
               <Navbar />
               {children}
+              <FooterSection/>
               <Toast/>
             </AuthProvider>
           </ToastProvider>
