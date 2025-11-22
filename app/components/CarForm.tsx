@@ -1,8 +1,11 @@
 "use client";
 import { useState } from "react";
-import { CarBrandSelect } from "./CarBrandSelect";
-import { CarModelSelect } from "./CarModelSelect";
-import { CarSubModelSelect } from "./CarSubModelSelect";
+import { CarSelect } from "./CarSelect";
+import {
+  useCarBrands,
+  useCarModels,
+  useCarSubModels,
+} from "@/hooks/useCarInfos";
 
 export default function CarForm() {
   const [form, setForm] = useState({
@@ -28,18 +31,39 @@ export default function CarForm() {
   return (
     <form className="space-y-4">
       <div>
-        <label className="block text-sm font-medium mb-1">Marke</label>
-        <CarBrandSelect setForm={setForm} />
+        <CarSelect
+          label="Marke"
+          placeholder="Marke wählen"
+          formKey="brand"
+          hook={useCarBrands}
+          getOptionLabel={(b) => b.name}
+          getOptionValue={(b) => b.name}
+          setForm={setForm}
+        />
       </div>
 
       <div>
-        <label className="block text-sm font-medium mb-1">Modelle</label>
-        <CarModelSelect brand={form.brand} setForm={setForm} />
+        <CarSelect
+          label="Modelle"
+          placeholder="Modelle wählen"
+          formKey="model"
+          hook={() => useCarModels(form.brand)}
+          getOptionLabel={(m) => m.name}
+          getOptionValue={(m) => m.name}
+          setForm={setForm}
+        />
       </div>
 
       <div>
-        <label className="block text-sm font-medium mb-1">Variante</label>
-        <CarSubModelSelect brand={form.brand} model={form.model} setForm={setForm} />
+        <CarSelect
+          label="Variente"
+          placeholder="Variente wählen"
+          formKey="variant"
+          hook={() => useCarSubModels(form.brand, form.model)}
+          getOptionLabel={(v) => v.submodel}
+          getOptionValue={(v) => v.submodel}
+          setForm={setForm}
+        />
       </div>
 
       <div>
@@ -53,20 +77,6 @@ export default function CarForm() {
           className="w-full border rounded-md p-2"
         />
       </div>
-
-      {/* <div>
-        <label className="block text-sm font-medium mb-1">
-          Variante / Motor
-        </label>
-        <input
-          type="text"
-          name="variant"
-          value={form.variant}
-          onChange={handleChange}
-          placeholder="z. B. 1.5 TSI DSG"
-          className="w-full border rounded-md p-2"
-        />
-      </div> */}
 
       <div>
         <label className="block text-sm font-medium mb-1">Getriebe</label>
