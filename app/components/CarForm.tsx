@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { CarBrandSelect } from "./CarBrandSelect";
 import { CarModelSelect } from "./CarModelSelect";
+import { CarSubModelSelect } from "./CarSubModelSelect";
 
 export default function CarForm() {
   const [form, setForm] = useState({
@@ -32,8 +33,13 @@ export default function CarForm() {
       </div>
 
       <div>
-        <label className="block text-sm font-medium mb-1">Marke</label>
+        <label className="block text-sm font-medium mb-1">Modelle</label>
         <CarModelSelect brand={form.brand} setForm={setForm} />
+      </div>
+
+      <div>
+        <label className="block text-sm font-medium mb-1">Variante</label>
+        <CarSubModelSelect brand={form.brand} model={form.model} setForm={setForm} />
       </div>
 
       <div>
@@ -48,7 +54,7 @@ export default function CarForm() {
         />
       </div>
 
-      <div>
+      {/* <div>
         <label className="block text-sm font-medium mb-1">
           Variante / Motor
         </label>
@@ -60,7 +66,7 @@ export default function CarForm() {
           placeholder="z. B. 1.5 TSI DSG"
           className="w-full border rounded-md p-2"
         />
-      </div>
+      </div> */}
 
       <div>
         <label className="block text-sm font-medium mb-1">Getriebe</label>

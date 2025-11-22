@@ -1,0 +1,802 @@
+[
+    {
+        "id": 67354,
+        "oem_make_model_id": 5387,
+        "year": 2017,
+        "make": "Acura",
+        "model": "NSX",
+        "submodel": "Base"
+    },
+    {
+        "id": 68933,
+        "oem_make_model_id": 5387,
+        "year": 2018,
+        "make": "Acura",
+        "model": "NSX",
+        "submodel": "Base"
+    },
+    {
+        "id": 70617,
+        "oem_make_model_id": 5387,
+        "year": 2019,
+        "make": "Acura",
+        "model": "NSX",
+        "submodel": "Base"
+    },
+    {
+        "id": 72327,
+        "oem_make_model_id": 5387,
+        "year": 2020,
+        "make": "Acura",
+        "model": "NSX",
+        "submodel": "Base"
+    },
+    {
+        "id": 64248,
+        "oem_make_model_id": 6058,
+        "year": 2015,
+        "make": "Acura",
+        "model": "MDX",
+        "submodel": "Base"
+    },
+    {
+        "id": 64249,
+        "oem_make_model_id": 6058,
+        "year": 2015,
+        "make": "Acura",
+        "model": "MDX",
+        "submodel": "SH-AWD"
+    },
+    {
+        "id": 65781,
+        "oem_make_model_id": 6058,
+        "year": 2016,
+        "make": "Acura",
+        "model": "MDX",
+        "submodel": "Base"
+    },
+    {
+        "id": 65782,
+        "oem_make_model_id": 6058,
+        "year": 2016,
+        "make": "Acura",
+        "model": "MDX",
+        "submodel": "SH-AWD"
+    },
+    {
+        "id": 67347,
+        "oem_make_model_id": 6058,
+        "year": 2017,
+        "make": "Acura",
+        "model": "MDX",
+        "submodel": "Base"
+    },
+    {
+        "id": 67348,
+        "oem_make_model_id": 6058,
+        "year": 2017,
+        "make": "Acura",
+        "model": "MDX",
+        "submodel": "SH-AWD"
+    },
+    {
+        "id": 67349,
+        "oem_make_model_id": 6058,
+        "year": 2017,
+        "make": "Acura",
+        "model": "MDX",
+        "submodel": "Sport Hybrid"
+    },
+    {
+        "id": 68926,
+        "oem_make_model_id": 6058,
+        "year": 2018,
+        "make": "Acura",
+        "model": "MDX",
+        "submodel": "Base"
+    },
+    {
+        "id": 68927,
+        "oem_make_model_id": 6058,
+        "year": 2018,
+        "make": "Acura",
+        "model": "MDX",
+        "submodel": "SH-AWD"
+    },
+    {
+        "id": 68928,
+        "oem_make_model_id": 6058,
+        "year": 2018,
+        "make": "Acura",
+        "model": "MDX",
+        "submodel": "Sport Hybrid"
+    },
+    {
+        "id": 70609,
+        "oem_make_model_id": 6058,
+        "year": 2019,
+        "make": "Acura",
+        "model": "MDX",
+        "submodel": "Base"
+    },
+    {
+        "id": 70610,
+        "oem_make_model_id": 6058,
+        "year": 2019,
+        "make": "Acura",
+        "model": "MDX",
+        "submodel": "SH-AWD"
+    },
+    {
+        "id": 70611,
+        "oem_make_model_id": 6058,
+        "year": 2019,
+        "make": "Acura",
+        "model": "MDX",
+        "submodel": "Sport Hybrid"
+    },
+    {
+        "id": 72319,
+        "oem_make_model_id": 6058,
+        "year": 2020,
+        "make": "Acura",
+        "model": "MDX",
+        "submodel": "Base"
+    },
+    {
+        "id": 72320,
+        "oem_make_model_id": 6058,
+        "year": 2020,
+        "make": "Acura",
+        "model": "MDX",
+        "submodel": "SH-AWD"
+    },
+    {
+        "id": 72321,
+        "oem_make_model_id": 6058,
+        "year": 2020,
+        "make": "Acura",
+        "model": "MDX",
+        "submodel": "Sport Hybrid"
+    },
+    {
+        "id": 64252,
+        "oem_make_model_id": 6556,
+        "year": 2015,
+        "make": "Acura",
+        "model": "RDX",
+        "submodel": "Base"
+    },
+    {
+        "id": 65785,
+        "oem_make_model_id": 6556,
+        "year": 2016,
+        "make": "Acura",
+        "model": "RDX",
+        "submodel": "Base"
+    },
+    {
+        "id": 67352,
+        "oem_make_model_id": 6556,
+        "year": 2017,
+        "make": "Acura",
+        "model": "RDX",
+        "submodel": "Base"
+    },
+    {
+        "id": 68931,
+        "oem_make_model_id": 6556,
+        "year": 2018,
+        "make": "Acura",
+        "model": "RDX",
+        "submodel": "Base"
+    },
+    {
+        "id": 70614,
+        "oem_make_model_id": 6556,
+        "year": 2019,
+        "make": "Acura",
+        "model": "RDX",
+        "submodel": "Base"
+    },
+    {
+        "id": 70615,
+        "oem_make_model_id": 6556,
+        "year": 2019,
+        "make": "Acura",
+        "model": "RDX",
+        "submodel": "SH-AWD"
+    },
+    {
+        "id": 72324,
+        "oem_make_model_id": 6556,
+        "year": 2020,
+        "make": "Acura",
+        "model": "RDX",
+        "submodel": "Base"
+    },
+    {
+        "id": 72325,
+        "oem_make_model_id": 6556,
+        "year": 2020,
+        "make": "Acura",
+        "model": "RDX",
+        "submodel": "SH-AWD"
+    },
+    {
+        "id": 64253,
+        "oem_make_model_id": 6946,
+        "year": 2015,
+        "make": "Acura",
+        "model": "ILX",
+        "submodel": "Base"
+    },
+    {
+        "id": 65786,
+        "oem_make_model_id": 6946,
+        "year": 2016,
+        "make": "Acura",
+        "model": "ILX",
+        "submodel": "Base"
+    },
+    {
+        "id": 67353,
+        "oem_make_model_id": 6946,
+        "year": 2017,
+        "make": "Acura",
+        "model": "ILX",
+        "submodel": "Base"
+    },
+    {
+        "id": 68932,
+        "oem_make_model_id": 6946,
+        "year": 2018,
+        "make": "Acura",
+        "model": "ILX",
+        "submodel": "Base"
+    },
+    {
+        "id": 70616,
+        "oem_make_model_id": 6946,
+        "year": 2019,
+        "make": "Acura",
+        "model": "ILX",
+        "submodel": "Base"
+    },
+    {
+        "id": 72326,
+        "oem_make_model_id": 6946,
+        "year": 2020,
+        "make": "Acura",
+        "model": "ILX",
+        "submodel": "Base"
+    },
+    {
+        "id": 64254,
+        "oem_make_model_id": 6998,
+        "year": 2015,
+        "make": "Acura",
+        "model": "RLX",
+        "submodel": "Base"
+    },
+    {
+        "id": 65787,
+        "oem_make_model_id": 6998,
+        "year": 2016,
+        "make": "Acura",
+        "model": "RLX",
+        "submodel": "Base"
+    },
+    {
+        "id": 65788,
+        "oem_make_model_id": 6998,
+        "year": 2016,
+        "make": "Acura",
+        "model": "RLX",
+        "submodel": "Sport Hybrid SH-AWD"
+    },
+    {
+        "id": 67355,
+        "oem_make_model_id": 6998,
+        "year": 2017,
+        "make": "Acura",
+        "model": "RLX",
+        "submodel": "Base"
+    },
+    {
+        "id": 67356,
+        "oem_make_model_id": 6998,
+        "year": 2017,
+        "make": "Acura",
+        "model": "RLX",
+        "submodel": "Sport Hybrid SH-AWD"
+    },
+    {
+        "id": 68934,
+        "oem_make_model_id": 6998,
+        "year": 2018,
+        "make": "Acura",
+        "model": "RLX",
+        "submodel": "Base"
+    },
+    {
+        "id": 68935,
+        "oem_make_model_id": 6998,
+        "year": 2018,
+        "make": "Acura",
+        "model": "RLX",
+        "submodel": "Sport Hybrid SH-AWD"
+    },
+    {
+        "id": 70618,
+        "oem_make_model_id": 6998,
+        "year": 2019,
+        "make": "Acura",
+        "model": "RLX",
+        "submodel": "Base"
+    },
+    {
+        "id": 70619,
+        "oem_make_model_id": 6998,
+        "year": 2019,
+        "make": "Acura",
+        "model": "RLX",
+        "submodel": "Sport Hybrid SH-AWD"
+    },
+    {
+        "id": 72328,
+        "oem_make_model_id": 6998,
+        "year": 2020,
+        "make": "Acura",
+        "model": "RLX",
+        "submodel": "Base"
+    },
+    {
+        "id": 72329,
+        "oem_make_model_id": 6998,
+        "year": 2020,
+        "make": "Acura",
+        "model": "RLX",
+        "submodel": "Sport Hybrid SH-AWD"
+    },
+    {
+        "id": 64250,
+        "oem_make_model_id": 7061,
+        "year": 2015,
+        "make": "Acura",
+        "model": "TLX",
+        "submodel": "Base"
+    },
+    {
+        "id": 64251,
+        "oem_make_model_id": 7061,
+        "year": 2015,
+        "make": "Acura",
+        "model": "TLX",
+        "submodel": "SH-AWD"
+    },
+    {
+        "id": 65783,
+        "oem_make_model_id": 7061,
+        "year": 2016,
+        "make": "Acura",
+        "model": "TLX",
+        "submodel": "Base"
+    },
+    {
+        "id": 65784,
+        "oem_make_model_id": 7061,
+        "year": 2016,
+        "make": "Acura",
+        "model": "TLX",
+        "submodel": "SH-AWD"
+    },
+    {
+        "id": 67350,
+        "oem_make_model_id": 7061,
+        "year": 2017,
+        "make": "Acura",
+        "model": "TLX",
+        "submodel": "Base"
+    },
+    {
+        "id": 67351,
+        "oem_make_model_id": 7061,
+        "year": 2017,
+        "make": "Acura",
+        "model": "TLX",
+        "submodel": "SH-AWD"
+    },
+    {
+        "id": 68929,
+        "oem_make_model_id": 7061,
+        "year": 2018,
+        "make": "Acura",
+        "model": "TLX",
+        "submodel": "Base"
+    },
+    {
+        "id": 68930,
+        "oem_make_model_id": 7061,
+        "year": 2018,
+        "make": "Acura",
+        "model": "TLX",
+        "submodel": "SH-AWD"
+    },
+    {
+        "id": 70612,
+        "oem_make_model_id": 7061,
+        "year": 2019,
+        "make": "Acura",
+        "model": "TLX",
+        "submodel": "Base"
+    },
+    {
+        "id": 70613,
+        "oem_make_model_id": 7061,
+        "year": 2019,
+        "make": "Acura",
+        "model": "TLX",
+        "submodel": "SH-AWD"
+    },
+    {
+        "id": 72322,
+        "oem_make_model_id": 7061,
+        "year": 2020,
+        "make": "Acura",
+        "model": "TLX",
+        "submodel": "Base"
+    },
+    {
+        "id": 72323,
+        "oem_make_model_id": 7061,
+        "year": 2020,
+        "make": "Acura",
+        "model": "TLX",
+        "submodel": "SH-AWD"
+    },
+    {
+        "id": 64285,
+        "oem_make_model_id": 5448,
+        "year": 2015,
+        "make": "Audi",
+        "model": "S4",
+        "submodel": "PRESTIGE"
+    },
+    {
+        "id": 64286,
+        "oem_make_model_id": 5448,
+        "year": 2015,
+        "make": "Audi",
+        "model": "S4",
+        "submodel": "Premium Plus"
+    },
+    {
+        "id": 65811,
+        "oem_make_model_id": 5448,
+        "year": 2016,
+        "make": "Audi",
+        "model": "S4",
+        "submodel": "PRESTIGE"
+    },
+    {
+        "id": 65812,
+        "oem_make_model_id": 5448,
+        "year": 2016,
+        "make": "Audi",
+        "model": "S4",
+        "submodel": "Premium Plus"
+    },
+    {
+        "id": 68969,
+        "oem_make_model_id": 5448,
+        "year": 2018,
+        "make": "Audi",
+        "model": "S4",
+        "submodel": "PRESTIGE"
+    },
+    {
+        "id": 68970,
+        "oem_make_model_id": 5448,
+        "year": 2018,
+        "make": "Audi",
+        "model": "S4",
+        "submodel": "Premium Plus"
+    },
+    {
+        "id": 70660,
+        "oem_make_model_id": 5448,
+        "year": 2019,
+        "make": "Audi",
+        "model": "S4",
+        "submodel": "PRESTIGE"
+    },
+    {
+        "id": 70661,
+        "oem_make_model_id": 5448,
+        "year": 2019,
+        "make": "Audi",
+        "model": "S4",
+        "submodel": "Premium"
+    },
+    {
+        "id": 70662,
+        "oem_make_model_id": 5448,
+        "year": 2019,
+        "make": "Audi",
+        "model": "S4",
+        "submodel": "Premium Plus"
+    },
+    {
+        "id": 72374,
+        "oem_make_model_id": 5448,
+        "year": 2020,
+        "make": "Audi",
+        "model": "S4",
+        "submodel": "PRESTIGE"
+    },
+    {
+        "id": 72375,
+        "oem_make_model_id": 5448,
+        "year": 2020,
+        "make": "Audi",
+        "model": "S4",
+        "submodel": "Premium"
+    },
+    {
+        "id": 72376,
+        "oem_make_model_id": 5448,
+        "year": 2020,
+        "make": "Audi",
+        "model": "S4",
+        "submodel": "Premium Plus"
+    },
+    {
+        "id": 64270,
+        "oem_make_model_id": 5643,
+        "year": 2015,
+        "make": "Audi",
+        "model": "A6 Quattro",
+        "submodel": "PRESTIGE"
+    },
+    {
+        "id": 64271,
+        "oem_make_model_id": 5643,
+        "year": 2015,
+        "make": "Audi",
+        "model": "A6 Quattro",
+        "submodel": "Premium"
+    },
+    {
+        "id": 64272,
+        "oem_make_model_id": 5643,
+        "year": 2015,
+        "make": "Audi",
+        "model": "A6 Quattro",
+        "submodel": "Premium Plus"
+    },
+    {
+        "id": 64273,
+        "oem_make_model_id": 5643,
+        "year": 2015,
+        "make": "Audi",
+        "model": "A6 Quattro",
+        "submodel": "TDI Premium Plus"
+    },
+    {
+        "id": 64274,
+        "oem_make_model_id": 5643,
+        "year": 2015,
+        "make": "Audi",
+        "model": "A6 Quattro",
+        "submodel": "TDI Prestige"
+    },
+    {
+        "id": 65804,
+        "oem_make_model_id": 5643,
+        "year": 2016,
+        "make": "Audi",
+        "model": "A6 Quattro",
+        "submodel": "PRESTIGE"
+    },
+    {
+        "id": 65805,
+        "oem_make_model_id": 5643,
+        "year": 2016,
+        "make": "Audi",
+        "model": "A6 Quattro",
+        "submodel": "Premium Plus"
+    },
+    {
+        "id": 65806,
+        "oem_make_model_id": 5643,
+        "year": 2016,
+        "make": "Audi",
+        "model": "A6 Quattro",
+        "submodel": "TDI Premium Plus"
+    },
+    {
+        "id": 65807,
+        "oem_make_model_id": 5643,
+        "year": 2016,
+        "make": "Audi",
+        "model": "A6 Quattro",
+        "submodel": "TDI Prestige"
+    },
+    {
+        "id": 67375,
+        "oem_make_model_id": 5643,
+        "year": 2017,
+        "make": "Audi",
+        "model": "A6 Quattro",
+        "submodel": "Competition"
+    },
+    {
+        "id": 67376,
+        "oem_make_model_id": 5643,
+        "year": 2017,
+        "make": "Audi",
+        "model": "A6 Quattro",
+        "submodel": "PRESTIGE"
+    },
+    {
+        "id": 67377,
+        "oem_make_model_id": 5643,
+        "year": 2017,
+        "make": "Audi",
+        "model": "A6 Quattro",
+        "submodel": "Premium"
+    },
+    {
+        "id": 67378,
+        "oem_make_model_id": 5643,
+        "year": 2017,
+        "make": "Audi",
+        "model": "A6 Quattro",
+        "submodel": "Premium Plus"
+    },
+    {
+        "id": 68960,
+        "oem_make_model_id": 5643,
+        "year": 2018,
+        "make": "Audi",
+        "model": "A6 Quattro",
+        "submodel": "PRESTIGE"
+    },
+    {
+        "id": 68961,
+        "oem_make_model_id": 5643,
+        "year": 2018,
+        "make": "Audi",
+        "model": "A6 Quattro",
+        "submodel": "Premium"
+    },
+    {
+        "id": 68962,
+        "oem_make_model_id": 5643,
+        "year": 2018,
+        "make": "Audi",
+        "model": "A6 Quattro",
+        "submodel": "Premium Plus"
+    },
+    {
+        "id": 68963,
+        "oem_make_model_id": 5643,
+        "year": 2018,
+        "make": "Audi",
+        "model": "A6 Quattro",
+        "submodel": "Sport"
+    },
+    {
+        "id": 70646,
+        "oem_make_model_id": 5643,
+        "year": 2019,
+        "make": "Audi",
+        "model": "A6 Quattro",
+        "submodel": "PRESTIGE"
+    },
+    {
+        "id": 70647,
+        "oem_make_model_id": 5643,
+        "year": 2019,
+        "make": "Audi",
+        "model": "A6 Quattro",
+        "submodel": "Premium"
+    },
+    {
+        "id": 70648,
+        "oem_make_model_id": 5643,
+        "year": 2019,
+        "make": "Audi",
+        "model": "A6 Quattro",
+        "submodel": "Premium Plus"
+    },
+    {
+        "id": 72357,
+        "oem_make_model_id": 5643,
+        "year": 2020,
+        "make": "Audi",
+        "model": "A6 Quattro",
+        "submodel": "PRESTIGE"
+    },
+    {
+        "id": 72358,
+        "oem_make_model_id": 5643,
+        "year": 2020,
+        "make": "Audi",
+        "model": "A6 Quattro",
+        "submodel": "Premium"
+    },
+    {
+        "id": 72359,
+        "oem_make_model_id": 5643,
+        "year": 2020,
+        "make": "Audi",
+        "model": "A6 Quattro",
+        "submodel": "Premium Plus"
+    },
+    {
+        "id": 64287,
+        "oem_make_model_id": 5644,
+        "year": 2015,
+        "make": "Audi",
+        "model": "S6",
+        "submodel": "Base"
+    },
+    {
+        "id": 65813,
+        "oem_make_model_id": 5644,
+        "year": 2016,
+        "make": "Audi",
+        "model": "S6",
+        "submodel": "PRESTIGE"
+    },
+    {
+        "id": 65814,
+        "oem_make_model_id": 5644,
+        "year": 2016,
+        "make": "Audi",
+        "model": "S6",
+        "submodel": "Premium Plus"
+    },
+    {
+        "id": 67384,
+        "oem_make_model_id": 5644,
+        "year": 2017,
+        "make": "Audi",
+        "model": "S6",
+        "submodel": "PRESTIGE"
+    },
+    {
+        "id": 67385,
+        "oem_make_model_id": 5644,
+        "year": 2017,
+        "make": "Audi",
+        "model": "S6",
+        "submodel": "Premium Plus"
+    },
+    {
+        "id": 68973,
+        "oem_make_model_id": 5644,
+        "year": 2018,
+        "make": "Audi",
+        "model": "S6",
+        "submodel": "PRESTIGE"
+    },
+    {
+        "id": 68974,
+        "oem_make_model_id": 5644,
+        "year": 2018,
+        "make": "Audi",
+        "model": "S6",
+        "submodel": "Premium Plus"
+    },
+    {
+        "id": 72380,
+        "oem_make_model_id": 5644,
+        "year": 2020,
+        "make": "Audi",
+        "model": "S6",
+        "submodel": "PRESTIGE"
+    }
+]

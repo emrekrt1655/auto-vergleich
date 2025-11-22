@@ -26,6 +26,15 @@ export interface CarModel {
   name: string;
 }
 
+export interface SubModel {
+  id: number;
+  oem_make_model_id: number;
+  year: number;
+  make: string;
+  model: string;
+  submodel: string;
+}
+
 export interface CarModelResponse {
   collection: ApiCollectionMeta;
   data: CarModel[];

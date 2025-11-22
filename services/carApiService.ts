@@ -1,4 +1,4 @@
-import { CarModel } from "@/types/Car";
+import { CarModel, SubModel } from "@/types/Car";
 
 export const getCarBrands = async () => {
   try {
@@ -34,6 +34,35 @@ export const getCarModels = async (): Promise<CarModel[]> => {
     return data || [];
   } catch (error) {
     console.error("Failed to fetch car models:", error);
+    return [];
+  }
+};
+
+export const getCarSubModels = async (
+  make: string,
+  model: string
+): Promise<SubModel[]> => {
+  try {
+    if (!make || !model) return [];
+
+    const res = await fetch(
+      `/api/cars/submodels?make=${encodeURIComponent(
+        make
+      )}&model=${encodeURIComponent(model)}`,
+      {
+        method: "GET",
+        headers: { "Content-Type": "application/json" },
+      }
+    );
+
+    if (!res.ok) {
+      throw new Error(`API error: ${res.status}`);
+    }
+
+    const data: SubModel[] = await res.json();
+    return data || [];
+  } catch (error) {
+    console.error("Failed to fetch submodels:", error);
     return [];
   }
 };
