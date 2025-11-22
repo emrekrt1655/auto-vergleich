@@ -1,25 +1,18 @@
-import { NextResponse } from "next/server";
+import { fetchCarApiData } from "@/lib/service/fetchCarApiData";
 
-export async function GET() {
-  try {
-    const res = await fetch("https://carapi.app/api/models/v2", {
-      headers: { "Content-Type": "application/json" },
+export async function GET(request: Request) {
+  const { searchParams } = new URL(request.url);
+
+  const make = searchParams.get("make");
+
+  if (!make) {
+    return new Response(JSON.stringify({ error: "Missing make parameter" }), {
+      status: 400,
     });
-
-    if (!res.ok) {
-      return NextResponse.json(
-        { error: "CarAPI request failed", status: res.status },
-        { status: res.status }
-      );
-    }
-
-    const json = await res.json();
-    return NextResponse.json(json.data);
-  } catch (error) {
-    console.error("CarAPI fetch error:", error);
-    return NextResponse.json(
-      { error: "Internal server error" },
-      { status: 500 }
-    );
   }
+
+  return fetchCarApiData({
+    endpoint: "models/v2",
+    params: { make },
+  });
 }

@@ -19,9 +19,11 @@ export const getCarBrands = async () => {
   }
 };
 
-export const getCarModels = async (): Promise<CarModel[]> => {
+export const getCarModels = async (make: string): Promise<CarModel[]> => {
   try {
-    const res = await fetch("/api/cars/models", {
+    if (!make) return [];
+
+    const res = await fetch(`/api/cars/models?make=${encodeURIComponent(make.toLowerCase())}`, {
       method: "GET",
       headers: { "Content-Type": "application/json" },
     });
@@ -47,7 +49,7 @@ export const getCarSubModels = async (
 
     const res = await fetch(
       `/api/cars/submodels?make=${encodeURIComponent(
-        make
+        make.toLowerCase()
       )}&model=${encodeURIComponent(model)}`,
       {
         method: "GET",
