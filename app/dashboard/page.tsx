@@ -1,13 +1,16 @@
 "use client";
 import CarForm, { CarFormHandle } from "@/app/components/CarForm";
-import { useContext, useRef } from "react";
+import { useContext, useRef, useState } from "react";
 import { ToastContext } from "@/app/(context)/toastContext";
+import Results from "../components/results/Results";
+import mockData from "@/data/aiModelMockData.json" assert { type: "json" };
 
 export default function DashboardPage() {
-  const { toast, setToast } = useContext(ToastContext);
+  const { setToast } = useContext(ToastContext);
 
   const car1Ref = useRef<CarFormHandle>(null);
   const car2Ref = useRef<CarFormHandle>(null);
+  const [resultData, setResultData] = useState<any>(null);
 
   const handleCompare = async () => {
     const car1 = car1Ref.current?.getFormData();
@@ -19,17 +22,23 @@ export default function DashboardPage() {
     }
 
     try {
-      const response = await fetch("/api/cars/compare", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ car1, car2 }),
-      });
-
-      const data = await response.json();
-      console.log("AI Vergleich:", data.result);
+      setResultData(mockData)
     } catch (error) {
-      console.error("Fehler:", error);
+      setToast({ message: "Fehler beim Vergleichen der Fahrzeuge.", type: "error" });
     }
+
+    // try {
+    //   const response = await fetch("/api/cars/compare", {
+    //     method: "POST",
+    //     headers: { "Content-Type": "application/json" },
+    //     body: JSON.stringify({ car1, car2 }),
+    //   });
+
+    //   const data = await response.json();
+    //   console.log("AI Vergleich:", data.result);
+    // } catch (error) {
+    //   setToast({ message: "Fehler beim Vergleichen der Fahrzeuge.", type: "error" });
+    // }
   };
 
   return (
@@ -68,6 +77,11 @@ export default function DashboardPage() {
           Vergleichen
         </button>
       </div>
+      {resultData && (
+        <section className="max-w-6xl mx-auto mt-16">
+          <Results data={resultData} />
+        </section>
+      )}
     </div>
   );
 }
