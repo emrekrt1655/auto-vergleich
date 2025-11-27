@@ -1,0 +1,31 @@
+{
+    "summary": "Der Volkswagen Passat erwies sich als die kosteneffizientere Wahl im Vergleich zum Honda Civic.",
+    "recommendation": "Der Volkswagen Passat bietet aufgrund niedrigerer Betriebskosten eine bessere Wirtschaftlichkeit.",
+    "cars": {
+        "car1": {
+            "fuelCostEUR": 1530,
+            "fuelConsumptionL": 5.1,
+            "insuranceCostEUR": 600,
+            "maintenanceCostEUR": 300,
+            "tuvCostEUR": 100,
+            "estimatedResaleValueEUR": 9500,
+            "totalCostEUR": 12630
+        },
+        "car2": {
+            "fuelCostEUR": 1950,
+            "fuelConsumptionL": 6.5,
+            "insuranceCostEUR": 700,
+            "maintenanceCostEUR": 400,
+            "tuvCostEUR": 150,
+            "estimatedResaleValueEUR": 8000,
+            "totalCostEUR": 13250
+        }
+    },
+    "comparison": {
+        "fuelCost": "Der Kraftstoffverbrauch des Passat ist geringer.",
+        "insuranceCost": "Die Versicherungskosten des Passat sind niedriger.",
+        "maintenanceCost": "Die Wartungskosten des Passat sind günstiger.",
+        "resaleValue": "Der Passat hat einen höheren geschätzten Wiederverkaufswert.",
+        "totalCost": "Die Gesamtkosten des Passat sind niedriger."
+    }
+}

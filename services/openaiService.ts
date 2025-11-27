@@ -5,26 +5,58 @@ const openai = new OpenAI({
 });
 
 export async function compareCarsWithAI(car1: any, car2: any) {
-  const prompt = `
-Compare the following two cars objectively based on price, fuel consumption,
-insurance costs, depreciation, and maintenance expenses.
+const prompt = `
+You are a car cost expert.
 
-At the end, give a JSON object with the following structure:
+Compare the following two cars objectively based on:
+- purchase price (EUR)
+- fuel consumption (liters per 100 km)
+- insurance costs (EUR)
+- TÜV/inspection situation (EUR)
+- maintenance and repair costs (EUR)
+- depreciation (estimated resale value in EUR after planned usage period)
+
+Estimate total ownership cost in EUR over the planned period.
+
+Return your response strictly as a JSON object in this structure (values and comments in German):
+
 {
-  "summary": "Short human-readable summary of comparison",
-    "recommendation": "Recommendation in German, which car is better and why",
-  "criteria": {
-    "price": "short comment about price comparison",
-    "fuelConsumption": "short comment about fuel usage",
-    "insurance": "short comment about insurance costs",
-    "depreciation": "short comment about long-term value",
-    "maintenance": "short comment about maintenance"
+  "summary": "Short summary in German",
+  "recommendation": "Recommendation in German, which car is more cost-efficient and why",
+  "cars": {
+    "car1": {
+      "fuelCostEUR": number,
+      "fuelConsumptionL": number,
+      "insuranceCostEUR": number,
+      "maintenanceCostEUR": number,
+      "tuvCostEUR": number,
+      "estimatedResaleValueEUR": number,
+      "totalCostEUR": number
+    },
+    "car2": {
+      "fuelCostEUR": number,
+      "fuelConsumptionL": number,
+      "insuranceCostEUR": number,
+      "maintenanceCostEUR": number,
+      "tuvCostEUR": number,
+      "estimatedResaleValueEUR": number,
+      "totalCostEUR": number
+    }
+  },
+  "comparison": {
+    "fuelCost": "short German comment",
+    "insuranceCost": "short German comment",
+    "maintenanceCost": "short German comment",
+    "resaleValue": "short German comment",
+    "totalCost": "short German comment"
   }
 }
 
 Car 1: ${JSON.stringify(car1, null, 2)}
 Car 2: ${JSON.stringify(car2, null, 2)}
 `;
+
+
   try {
     const completion = await openai.chat.completions.create({
       model: "gpt-4o-mini",
