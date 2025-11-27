@@ -1,7 +1,37 @@
 "use client";
-import CarForm from "@/app/components/CarForm";
+import CarForm, { CarFormHandle } from "@/app/components/CarForm";
+import { useContext, useRef } from "react";
+import { ToastContext } from "@/app/(context)/toastContext";
 
 export default function DashboardPage() {
+  const { toast, setToast } = useContext(ToastContext);
+
+  const car1Ref = useRef<CarFormHandle>(null);
+  const car2Ref = useRef<CarFormHandle>(null);
+
+  const handleCompare = async () => {
+    const car1 = car1Ref.current?.getFormData();
+    const car2 = car2Ref.current?.getFormData();
+
+    if (!car1 || !car2) {
+      setToast({ message: "Bitte beide Fahrzeuge ausfüllen!", type: "error" });
+      return;
+    }
+
+    try {
+      const response = await fetch("/api/cars/compare", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ car1, car2 }),
+      });
+
+      const data = await response.json();
+      console.log("AI Vergleich:", data.result);
+    } catch (error) {
+      console.error("Fehler:", error);
+    }
+  };
+
   return (
     <div className="min-h-screen py-16 px-6">
       <section className="text-center mb-12">
@@ -20,16 +50,24 @@ export default function DashboardPage() {
           <h2 className="text-lg font-semibold mb-4 text-brand-primary">
             Fahrzeug 1
           </h2>
-          <CarForm />
+          <CarForm ref={car1Ref} />
         </div>
 
         <div className=" p-6 rounded-xl shadow-sm">
           <h2 className="text-lg font-semibold mb-4 text-brand-secondary">
             Fahrzeug 2
           </h2>
-          <CarForm />
+          <CarForm ref={car2Ref} />
         </div>
       </section>
+      <div className="text-center mt-12">
+        <button
+          onClick={handleCompare}
+          className="bg-brand-primary hover:bg-brand-primary/80 text-white px-6 py-3 rounded-xl font-semibold transition"
+        >
+          Vergleichen
+        </button>
+      </div>
     </div>
   );
 }

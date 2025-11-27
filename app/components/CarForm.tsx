@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useImperativeHandle, forwardRef } from "react";
 import { CarSelect } from "./CarSelect";
 import {
   useCarBrands,
@@ -7,26 +7,36 @@ import {
   useCarSubModels,
 } from "@/hooks/useCarInfos";
 
-export default function CarForm() {
-  const [form, setForm] = useState({
-    brand: "",
-    model: "",
-    year: "",
-    variant: "",
-    transmission: "",
-    fuelType: "",
-    consumption: "",
-    inspectionDate: "",
-    usageYears: "",
-    annualKm: "",
-    purchasePrice: "",
-  });
+export interface CarFormHandle {
+  getFormData: () => typeof initialForm;
+}
+
+const initialForm = {
+  brand: "",
+  model: "",
+  year: "",
+  variant: "",
+  transmission: "",
+  fuelType: "",
+  consumption: "",
+  inspectionDate: "",
+  usageYears: "",
+  annualKm: "",
+  purchasePrice: "",
+};
+
+const CarForm = forwardRef<CarFormHandle>((_, ref) => {
+  const [form, setForm] = useState(initialForm);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
   ) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
+
+  useImperativeHandle(ref, () => ({
+    getFormData: () => form,
+  }));
 
   return (
     <form className="space-y-4">
@@ -177,4 +187,7 @@ export default function CarForm() {
       </div>
     </form>
   );
-}
+});
+
+CarForm.displayName = "CarForm";
+export default CarForm;
