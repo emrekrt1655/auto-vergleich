@@ -5,6 +5,29 @@
     "description": "Yapay zekâ modelimiz yakıttan sigortaya, değer kaybına kadar tüm maliyetleri hesaplar ve en iyi kararı vermeni sağlar.",
     "button": "Hemen ücretsiz karşılaştır"
   },
+  "ProblemSection": {
+    "title": "Bir arabanın gerçek maliyeti sadece satın alma fiyatından fazladır",
+    "description": "Birçok araba alıcısı sigorta, bakım veya değer kaybı gibi devam eden maliyetleri küçümser. Aracımız size hangi aracın uzun vadede gerçekten daha uygun olduğunu gösterir – gerçekçi Alman verilerine dayalı olarak."
+  },
+  "HowItWorksSection": {
+    "title": "Nasıl Çalışır?",
+    "step1": {
+      "title": "Araçları Girin",
+      "description": "İki araba seçin veya bir ilandan ekleyin."
+    },
+    "step2": {
+      "title": "Kullanım Süresini Seçin",
+      "description": "Arabayı ne kadar süre kullanacağınızı belirleyin."
+    },
+    "step3": {
+      "title": "Yapay Zeka Maliyetleri Hesaplar",
+      "description": "Modelimiz verileri analiz eder ve toplam maliyetleri hesaplar."
+    },
+    "step4": {
+      "title": "Sonucu Görüntüleyin",
+      "description": "Tüm maliyetleri açık ve etkileşimli şekilde karşılaştırın."
+    }
+  },
   "Navbar": {
     "welcome": "Hoş geldin, {name}",
     "login": "Giriş yap",

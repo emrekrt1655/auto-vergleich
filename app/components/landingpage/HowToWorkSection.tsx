@@ -1,14 +1,35 @@
-const steps = [
-  { icon: "🚗", title: "Fahrzeuge eingeben", desc: "Wähle zwei Autos oder füge sie aus einem Inserat ein." },
-  { icon: "📅", title: "Nutzungsdauer wählen", desc: "Definiere, wie lange du das Auto behalten willst." },
-  { icon: "🤖", title: "KI berechnet Kosten", desc: "Unser Modell analysiert Daten und berechnet die Gesamtkosten." },
-  { icon: "📊", title: "Ergebnis ansehen", desc: "Vergleiche alle Kosten übersichtlich und interaktiv." },
-];
+"use client";
+import { useTranslations } from "next-intl";
 
 export default function HowItWorksSection() {
+  const t = useTranslations("HowItWorksSection");
+
+  const steps = [
+    { 
+      icon: "🚗", 
+      title: t("step1.title"), 
+      desc: t("step1.description") 
+    },
+    { 
+      icon: "📅", 
+      title: t("step2.title"), 
+      desc: t("step2.description") 
+    },
+    { 
+      icon: "🤖", 
+      title: t("step3.title"), 
+      desc: t("step3.description") 
+    },
+    { 
+      icon: "📊", 
+      title: t("step4.title"), 
+      desc: t("step4.description") 
+    },
+  ];
+
   return (
     <section className="py-20 bg-(--background) text-(--foreground)">
-      <h2 className="text-3xl font-bold text-center mb-12">So funktioniert’s</h2>
+      <h2 className="text-3xl font-bold text-center mb-12">{t("title")}</h2>
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto px-6">
         {steps.map((s, i) => (
           <div

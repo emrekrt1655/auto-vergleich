@@ -5,6 +5,29 @@
     "description": "Unser KI-Modell berechnet alle Kosten – von Kraftstoff über Versicherung bis zum Wertverlust – damit du die beste Entscheidung triffst.",
     "button": "Jetzt kostenlos vergleichen"
   },
+   "ProblemSection": {
+    "title": "Der wahre Preis eines Autos ist mehr als der Kaufpreis",
+    "description": "Viele Autokäufer unterschätzen laufende Kosten wie Versicherung, Wartung oder Wertverlust. Unser Tool zeigt dir, welches Fahrzeug langfristig wirklich günstiger ist – basierend auf realistischen deutschen Daten."
+  },
+  "HowItWorksSection": {
+    "title": "So funktioniert's",
+    "step1": {
+      "title": "Fahrzeuge eingeben",
+      "description": "Wähle zwei Autos oder füge sie aus einem Inserat ein."
+    },
+    "step2": {
+      "title": "Nutzungsdauer wählen",
+      "description": "Definiere, wie lange du das Auto behalten willst."
+    },
+    "step3": {
+      "title": "KI berechnet Kosten",
+      "description": "Unser Modell analysiert Daten und berechnet die Gesamtkosten."
+    },
+    "step4": {
+      "title": "Ergebnis ansehen",
+      "description": "Vergleiche alle Kosten übersichtlich und interaktiv."
+    }
+  },
   "Navbar": {
     "welcome": "Willkommen, {name}",
     "login": "Anmelden",
