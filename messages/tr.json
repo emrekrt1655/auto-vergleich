@@ -1,42 +1,93 @@
 {
-  "Hero": {
-    "title": "Arabanın {highlight} karşılaştır",
-    "highlight": "gerçek fiyatını",
-    "description": "Yapay zekâ modelimiz yakıttan sigortaya, değer kaybına kadar tüm maliyetleri hesaplar ve en iyi kararı vermeni sağlar.",
-    "button": "Hemen ücretsiz karşılaştır"
-  },
-  "ProblemSection": {
-    "title": "Bir arabanın gerçek maliyeti sadece satın alma fiyatından fazladır",
-    "description": "Birçok araba alıcısı sigorta, bakım veya değer kaybı gibi devam eden maliyetleri küçümser. Aracımız size hangi aracın uzun vadede gerçekten daha uygun olduğunu gösterir – gerçekçi Alman verilerine dayalı olarak."
-  },
-  "HowItWorksSection": {
-    "title": "Nasıl Çalışır?",
-    "step1": {
-      "title": "Araçları Girin",
-      "description": "İki araba seçin veya bir ilandan ekleyin."
+  "LandingPage": {
+    "Hero": {
+      "title": "Arabanın {highlight} karşılaştır",
+      "highlight": "gerçek fiyatını",
+      "description": "Yapay zekâ modelimiz yakıttan sigortaya, değer kaybına kadar tüm maliyetleri hesaplar ve en iyi kararı vermeni sağlar.",
+      "button": "Hemen ücretsiz karşılaştır"
     },
-    "step2": {
-      "title": "Kullanım Süresini Seçin",
-      "description": "Arabayı ne kadar süre kullanacağınızı belirleyin."
+    "ProblemSection": {
+      "title": "Bir arabanın gerçek maliyeti sadece satın alma fiyatından fazladır",
+      "description": "Birçok araba alıcısı sigorta, bakım veya değer kaybı gibi devam eden maliyetleri küçümser. Aracımız size hangi aracın uzun vadede gerçekten daha uygun olduğunu gösterir – gerçekçi Alman verilerine dayalı olarak."
     },
-    "step3": {
-      "title": "Yapay Zeka Maliyetleri Hesaplar",
-      "description": "Modelimiz verileri analiz eder ve toplam maliyetleri hesaplar."
+    "HowItWorksSection": {
+      "title": "Nasıl Çalışır?",
+      "step1": {
+        "title": "Araçları Girin",
+        "description": "İki araba seçin veya bir ilandan ekleyin."
+      },
+      "step2": {
+        "title": "Kullanım Süresini Seçin",
+        "description": "Arabayı ne kadar süre kullanacağınızı belirleyin."
+      },
+      "step3": {
+        "title": "Yapay Zeka Maliyetleri Hesaplar",
+        "description": "Modelimiz verileri analiz eder ve toplam maliyetleri hesaplar."
+      },
+      "step4": {
+        "title": "Sonucu Görüntüleyin",
+        "description": "Tüm maliyetleri açık ve etkileşimli şekilde karşılaştırın."
+      }
     },
-    "step4": {
-      "title": "Sonucu Görüntüleyin",
-      "description": "Tüm maliyetleri açık ve etkileşimli şekilde karşılaştırın."
+    "FeaturesSection": {
+      "title": "Karşılaştırmamız Neden Benzersiz?",
+      "feature1": {
+        "title": "Alman Pazar Verileri",
+        "description": "Motorlu taşıt vergisi, SF sınıfı ve bölgesel yakıt fiyatları entegre."
+      },
+      "feature2": {
+        "title": "Yapay Zeka Tabanlı Modeller",
+        "description": "Hassas değer kaybı ve bakım tahminleri."
+      },
+      "feature3": {
+        "title": "Açık Görselleştirmeler",
+        "description": "Grafikler ve tablolar paranızın nereye gittiğini gösterir."
+      },
+      "feature4": {
+        "title": "Kolay Kullanım",
+        "description": "Hızlı, sezgisel ve her cihazda kullanılabilir."
+      }
+    },
+    "ExampleOutputSection": {
+      "title": "Örnek Sonuç",
+      "subtitle": "VW Golf 1.5 TSI vs. Opel Astra 1.2 Turbo - 5 yıl / 75.000 km",
+      "chartPlaceholder": "[Grafik buraya gelecek]",
+      "tablePlaceholder": "[Karşılaştırma tablosu buraya gelecek]"
+    },
+    "CallToActionSection": {
+      "title": "Arabanızın Gerçek Fiyatını Keşfetmeye Hazır mısınız?",
+      "button": "Şimdi ücretsiz başlayın"
+    },
+    "TestimonialsSection": {
+      "title": "Kullanıcılar Ne Diyor?",
+      "testimonial1": {
+        "quote": "Süper basit ve satın alma kararında gerçekten yardımcı oluyor!",
+        "name": "Ayşe Y.",
+        "role": "İstanbul'dan araba alıcısı"
+      },
+      "testimonial2": {
+        "quote": "Sonunda arabamın bana gerçekten ne kadara mal olduğunu görüyorum.",
+        "name": "Mehmet K.",
+        "role": "Ankara'dan işe gidip gelen"
+      },
+      "testimonial3": {
+        "quote": "Harika bir araç – kesinlikle birkaç bin euro tasarruf ediyorum.",
+        "name": "Ahmet D.",
+        "role": "İzmir'den aile babası"
+      }
     }
   },
-  "ExampleOutputSection": {
-    "title": "Örnek Sonuç",
-    "subtitle": "VW Golf 1.5 TSI vs. Opel Astra 1.2 Turbo - 5 yıl / 75.000 km",
-    "chartPlaceholder": "[Grafik buraya gelecek]",
-    "tablePlaceholder": "[Karşılaştırma tablosu buraya gelecek]"
-  },
-  "Navbar": {
-    "welcome": "Hoş geldin, {name}",
-    "login": "Giriş yap",
-    "logout": "Çıkış yap"
+  "Components": {
+    "Navbar": {
+      "welcome": "Hoş geldin, {name}",
+      "login": "Giriş yap",
+      "logout": "Çıkış yap"
+    },
+     "FooterSection": {
+      "copyright": "© {year} AutoCompare AI. Tüm hakları saklıdır.",
+      "imprint": "Künye",
+      "privacy": "Gizlilik",
+      "contact": "İletişim"
+    }
   }
 }

@@ -2,7 +2,7 @@
 import { useTranslations } from "next-intl";
 
 export default function HowItWorksSection() {
-  const t = useTranslations("HowItWorksSection");
+  const t = useTranslations("LandingPage.HowItWorksSection");
 
   const steps = [
     { 

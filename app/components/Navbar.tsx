@@ -10,7 +10,7 @@ import { useHandleRoute } from "@/hooks/useHandleRoute";
 import { useAuthModal } from "@/hooks/useAuthModal";
 
 const Navbar = () => {
-  const t = useTranslations("Navbar");
+  const t = useTranslations("Components.Navbar");
   const { user } = useAuth();
   const { logout } = useAuthMutation();
   const { handleRoute } = useHandleRoute();

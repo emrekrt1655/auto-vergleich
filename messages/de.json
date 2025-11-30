@@ -1,42 +1,93 @@
 {
-  "Hero": {
-    "title": "Vergleiche den {highlight} deines Autos",
-    "highlight": "wahren Preis",
-    "description": "Unser KI-Modell berechnet alle Kosten – von Kraftstoff über Versicherung bis zum Wertverlust – damit du die beste Entscheidung triffst.",
-    "button": "Jetzt kostenlos vergleichen"
-  },
-   "ProblemSection": {
-    "title": "Der wahre Preis eines Autos ist mehr als der Kaufpreis",
-    "description": "Viele Autokäufer unterschätzen laufende Kosten wie Versicherung, Wartung oder Wertverlust. Unser Tool zeigt dir, welches Fahrzeug langfristig wirklich günstiger ist – basierend auf realistischen deutschen Daten."
-  },
-  "HowItWorksSection": {
-    "title": "So funktioniert's",
-    "step1": {
-      "title": "Fahrzeuge eingeben",
-      "description": "Wähle zwei Autos oder füge sie aus einem Inserat ein."
+  "LandingPage": {
+    "Hero": {
+      "title": "Vergleiche den {highlight} deines Autos",
+      "highlight": "wahren Preis",
+      "description": "Unser KI-Modell berechnet alle Kosten – von Kraftstoff über Versicherung bis zum Wertverlust – damit du die beste Entscheidung triffst.",
+      "button": "Jetzt kostenlos vergleichen"
     },
-    "step2": {
-      "title": "Nutzungsdauer wählen",
-      "description": "Definiere, wie lange du das Auto behalten willst."
+    "ProblemSection": {
+      "title": "Der wahre Preis eines Autos ist mehr als der Kaufpreis",
+      "description": "Viele Autokäufer unterschätzen laufende Kosten wie Versicherung, Wartung oder Wertverlust. Unser Tool zeigt dir, welches Fahrzeug langfristig wirklich günstiger ist – basierend auf realistischen deutschen Daten."
     },
-    "step3": {
-      "title": "KI berechnet Kosten",
-      "description": "Unser Modell analysiert Daten und berechnet die Gesamtkosten."
+    "HowItWorksSection": {
+      "title": "So funktioniert's",
+      "step1": {
+        "title": "Fahrzeuge eingeben",
+        "description": "Wähle zwei Autos oder füge sie aus einem Inserat ein."
+      },
+      "step2": {
+        "title": "Nutzungsdauer wählen",
+        "description": "Definiere, wie lange du das Auto behalten willst."
+      },
+      "step3": {
+        "title": "KI berechnet Kosten",
+        "description": "Unser Modell analysiert Daten und berechnet die Gesamtkosten."
+      },
+      "step4": {
+        "title": "Ergebnis ansehen",
+        "description": "Vergleiche alle Kosten übersichtlich und interaktiv."
+      }
     },
-    "step4": {
-      "title": "Ergebnis ansehen",
-      "description": "Vergleiche alle Kosten übersichtlich und interaktiv."
+    "FeaturesSection": {
+      "title": "Warum unser Vergleich einzigartig ist",
+      "feature1": {
+        "title": "Deutsche Marktdaten",
+        "description": "KFZ-Steuer, SF-Klasse und regionale Spritpreise integriert."
+      },
+      "feature2": {
+        "title": "KI-basierte Modelle",
+        "description": "Präzise Wertverlust- und Wartungsvorhersagen."
+      },
+      "feature3": {
+        "title": "Klare Visualisierungen",
+        "description": "Charts und Tabellen zeigen, wo dein Geld hingeht."
+      },
+      "feature4": {
+        "title": "Einfache Bedienung",
+        "description": "Schnell, intuitiv und auf jedem Gerät nutzbar."
+      }
+    },
+    "ExampleOutputSection": {
+      "title": "Beispiel-Ergebnis",
+      "subtitle": "VW Golf 1.5 TSI vs. Opel Astra 1.2 Turbo über 5 Jahre / 75.000 km",
+      "chartPlaceholder": "[Chart kommt hier]",
+      "tablePlaceholder": "[Vergleichstabelle kommt hier]"
+    },
+    "CallToActionSection": {
+      "title": "Bereit, den wahren Preis deines Autos zu entdecken?",
+      "button": "Jetzt kostenlos starten"
+    },
+    "TestimonialsSection": {
+      "title": "Was Nutzer sagen",
+      "testimonial1": {
+        "quote": "Super einfach und hilft wirklich bei der Kaufentscheidung!",
+        "name": "Lena M.",
+        "role": "Autokäuferin aus München"
+      },
+      "testimonial2": {
+        "quote": "Endlich sehe ich, was mein Auto mich wirklich kostet.",
+        "name": "Thomas K.",
+        "role": "Pendler aus Köln"
+      },
+      "testimonial3": {
+        "quote": "Tolles Tool – spare mir sicher ein paar tausend Euro.",
+        "name": "Jörg F.",
+        "role": "Familienvater aus Hamburg"
+      }
     }
   },
-  "ExampleOutputSection": {
-    "title": "Beispiel-Ergebnis",
-    "subtitle": "VW Golf 1.5 TSI vs. Opel Astra 1.2 Turbo über 5 Jahre / 75.000 km",
-    "chartPlaceholder": "[Chart kommt hier]",
-    "tablePlaceholder": "[Vergleichstabelle kommt hier]"
-  },
-  "Navbar": {
-    "welcome": "Willkommen, {name}",
-    "login": "Anmelden",
-    "logout": "Abmelden"
+  "Components": {
+    "Navbar": {
+      "welcome": "Willkommen, {name}",
+      "login": "Anmelden",
+      "logout": "Abmelden"
+    },
+    "FooterSection": {
+      "copyright": "© {year} AutoCompare AI. Alle Rechte vorbehalten.",
+      "imprint": "Impressum",
+      "privacy": "Datenschutz",
+      "contact": "Kontakt"
+    }
   }
 }

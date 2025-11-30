@@ -5,7 +5,7 @@ import { useHandleRoute } from "@/hooks/useHandleRoute";
 import { useAuthModal } from "@/hooks/useAuthModal";
 
 export default function Hero() {
-  const t = useTranslations('Hero');
+  const t = useTranslations('LandingPage.Hero');
   const { user } = useAuth();
   const { handleRoute } = useHandleRoute();
   const { openModal } = useAuthModal();

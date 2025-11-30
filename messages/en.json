@@ -34,6 +34,47 @@
       "subtitle": "VW Golf 1.5 TSI vs. Opel Astra 1.2 Turbo over 5 years / 75,000 km",
       "chartPlaceholder": "[Chart coming here]",
       "tablePlaceholder": "[Comparison table coming here]"
+    },
+    "FeaturesSection": {
+      "title": "Why Our Comparison Is Unique",
+      "feature1": {
+        "title": "German Market Data",
+        "description": "Vehicle tax, SF class and regional fuel prices integrated."
+      },
+      "feature2": {
+        "title": "AI-based Models",
+        "description": "Precise depreciation and maintenance predictions."
+      },
+      "feature3": {
+        "title": "Clear Visualizations",
+        "description": "Charts and tables show where your money goes."
+      },
+      "feature4": {
+        "title": "Easy to Use",
+        "description": "Fast, intuitive and usable on any device."
+      }
+    },
+    "CallToActionSection": {
+      "title": "Ready to Discover the True Price of Your Car?",
+      "button": "Start for free now"
+    },
+    "TestimonialsSection": {
+      "title": "What Users Say",
+      "testimonial1": {
+        "quote": "Super easy and really helps with the purchase decision!",
+        "name": "Sarah M.",
+        "role": "Car buyer from London"
+      },
+      "testimonial2": {
+        "quote": "Finally I see what my car really costs me.",
+        "name": "John K.",
+        "role": "Commuter from Manchester"
+      },
+      "testimonial3": {
+        "quote": "Great tool – definitely saving me a few thousand euros.",
+        "name": "David F.",
+        "role": "Family father from Birmingham"
+      }
     }
   },
   "Components": {
@@ -41,6 +82,12 @@
       "welcome": "Welcome, {name}",
       "login": "Login",
       "logout": "Logout"
+    },
+    "FooterSection": {
+      "copyright": "© {year} AutoCompare AI. All rights reserved.",
+      "imprint": "Imprint",
+      "privacy": "Privacy",
+      "contact": "Contact"
     }
   }
 }

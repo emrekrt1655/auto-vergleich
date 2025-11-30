@@ -2,7 +2,7 @@
 import { useTranslations } from "next-intl";
 
 export default function ExampleOutputSection() {
-  const t = useTranslations("ExampleOutputSection");
+  const t = useTranslations("LandingPage.ExampleOutputSection");
 
   return (
     <section className="py-20 bg-(--background) text-(--foreground) text-center px-6">

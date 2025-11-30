@@ -1,15 +1,36 @@
-const features = [
-  { icon: "🇩🇪", title: "Deutsche Marktdaten", desc: "KFZ-Steuer, SF-Klasse und regionale Spritpreise integriert." },
-  { icon: "🤖", title: "KI-basierte Modelle", desc: "Präzise Wertverlust- und Wartungsvorhersagen." },
-  { icon: "📈", title: "Klare Visualisierungen", desc: "Charts und Tabellen zeigen, wo dein Geld hingeht." },
-  { icon: "💡", title: "Einfache Bedienung", desc: "Schnell, intuitiv und auf jedem Gerät nutzbar." },
-];
+"use client";
+import { useTranslations } from "next-intl";
 
 export default function FeaturesSection() {
+  const t = useTranslations("LandingPage.FeaturesSection");
+
+  const features = [
+    { 
+      icon: "🇩🇪", 
+      title: t("feature1.title"), 
+      desc: t("feature1.description") 
+    },
+    { 
+      icon: "🤖", 
+      title: t("feature2.title"), 
+      desc: t("feature2.description") 
+    },
+    { 
+      icon: "📈", 
+      title: t("feature3.title"), 
+      desc: t("feature3.description") 
+    },
+    { 
+      icon: "💡", 
+      title: t("feature4.title"), 
+      desc: t("feature4.description") 
+    },
+  ];
+
   return (
     <section className="py-20 bg-gray-50 dark:bg-[#111]">
       <h2 className="text-3xl font-bold text-center text-brand-neutral mb-10">
-        Warum unser Vergleich einzigartig ist
+        {t("title")}
       </h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto px-6">
         {features.map((f, i) => (
