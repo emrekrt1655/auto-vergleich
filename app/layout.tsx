@@ -4,9 +4,6 @@ import "./globals.css";
 import ToastProvider from "./(context)/toastContext";
 import { ReactQueryProvider } from "./(context)/reactQueryProvider";
 import { AuthProvider } from "./(context)/authContext";
-import Navbar from "./components/Navbar";
-import { Toast } from "./components/Toast";
-import FooterSection from "./components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,10 +33,7 @@ export default function RootLayout({
         <ReactQueryProvider>
           <ToastProvider>
             <AuthProvider>
-              <Navbar />
-              {children}
-              <FooterSection/>
-              <Toast/>
+             {children}
             </AuthProvider>
           </ToastProvider>
         </ReactQueryProvider>

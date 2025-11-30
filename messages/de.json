@@ -1,0 +1,13 @@
+{
+  "Hero": {
+    "title": "Vergleiche den {highlight} deines Autos",
+    "highlight": "wahren Preis",
+    "description": "Unser KI-Modell berechnet alle Kosten – von Kraftstoff über Versicherung bis zum Wertverlust – damit du die beste Entscheidung triffst.",
+    "button": "Jetzt kostenlos vergleichen"
+  },
+  "Navbar": {
+    "welcome": "Willkommen, {name}",
+    "login": "Anmelden",
+    "logout": "Abmelden"
+  }
+}

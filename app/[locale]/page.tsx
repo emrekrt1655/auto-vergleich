@@ -1,10 +1,10 @@
-import CallToActionSection from "./components/landingpage/CalltoAction";
-import ExampleOutputSection from "./components/landingpage/ExampleOutputSection";
-import FeaturesSection from "./components/landingpage/FeaturesSection";
-import Hero from "./components/landingpage/HeroSection";
-import HowItWorksSection from "./components/landingpage/HowToWorkSection";
-import ProblemSection from "./components/landingpage/ProblemSection";
-import TestimonialsSection from "./components/landingpage/TestimonialsSection";
+import CallToActionSection from "../components/landingpage/CalltoAction";
+import ExampleOutputSection from "../components/landingpage/ExampleOutputSection";
+import FeaturesSection from "../components/landingpage/FeaturesSection";
+import Hero from "../components/landingpage/HeroSection";
+import HowItWorksSection from "../components/landingpage/HowToWorkSection";
+import ProblemSection from "../components/landingpage/ProblemSection";
+import TestimonialsSection from "../components/landingpage/TestimonialsSection";
 
 export default function Home() {
   return (
