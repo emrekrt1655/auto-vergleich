@@ -1,13 +1,13 @@
 {
   "Hero": {
-    "title": "Arabanın {highlight} karşılaştır",
-    "highlight": "gerçek fiyatını",
-    "description": "Yapay zekâ modelimiz yakıttan sigortaya, değer kaybına kadar tüm maliyetleri hesaplar ve en iyi kararı vermeni sağlar.",
-    "button": "Hemen ücretsiz karşılaştır"
+    "title": "Compare the {highlight} of your car",
+    "highlight": "true price",
+    "description": "Our AI model calculates all costs – from fuel to insurance to depreciation – so you make the best decision.",
+    "button": "Compare now for free"
   },
   "Navbar": {
-    "welcome": "Hoş geldin, {name}",
-    "login": "Giriş yap",
-    "logout": "Çıkış yap"
+    "welcome": "Welcome, {name}",
+    "login": "Login",
+    "logout": "Logout"
   }
 }
