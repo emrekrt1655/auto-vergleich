@@ -28,6 +28,12 @@
       "description": "Vergleiche alle Kosten übersichtlich und interaktiv."
     }
   },
+  "ExampleOutputSection": {
+    "title": "Beispiel-Ergebnis",
+    "subtitle": "VW Golf 1.5 TSI vs. Opel Astra 1.2 Turbo über 5 Jahre / 75.000 km",
+    "chartPlaceholder": "[Chart kommt hier]",
+    "tablePlaceholder": "[Vergleichstabelle kommt hier]"
+  },
   "Navbar": {
     "welcome": "Willkommen, {name}",
     "login": "Anmelden",

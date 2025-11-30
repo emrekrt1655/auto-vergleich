@@ -1,36 +1,46 @@
 {
-  "Hero": {
-    "title": "Compare the {highlight} of your car",
-    "highlight": "true price",
-    "description": "Our AI model calculates all costs – from fuel to insurance to depreciation – so you make the best decision.",
-    "button": "Compare now for free"
-  },
-  "ProblemSection": {
-    "title": "The true cost of a car is more than the purchase price",
-    "description": "Many car buyers underestimate ongoing costs like insurance, maintenance, or depreciation. Our tool shows you which vehicle is really cheaper in the long run – based on realistic German data."
-  },
-  "HowItWorksSection": {
-    "title": "How It Works",
-    "step1": {
-      "title": "Enter Vehicles",
-      "description": "Choose two cars or add them from a listing."
+  "LandingPage": {
+    "Hero": {
+      "title": "Compare the {highlight} of your car",
+      "highlight": "true price",
+      "description": "Our AI model calculates all costs – from fuel to insurance to depreciation – so you make the best decision.",
+      "button": "Compare now for free"
     },
-    "step2": {
-      "title": "Choose Usage Period",
-      "description": "Define how long you want to keep the car."
+    "ProblemSection": {
+      "title": "The true cost of a car is more than the purchase price",
+      "description": "Many car buyers underestimate ongoing costs like insurance, maintenance, or depreciation. Our tool shows you which vehicle is really cheaper in the long run – based on realistic German data."
     },
-    "step3": {
-      "title": "AI Calculates Costs",
-      "description": "Our model analyzes data and calculates total costs."
+    "HowItWorksSection": {
+      "title": "How It Works",
+      "step1": {
+        "title": "Enter Vehicles",
+        "description": "Choose two cars or add them from a listing."
+      },
+      "step2": {
+        "title": "Choose Usage Period",
+        "description": "Define how long you want to keep the car."
+      },
+      "step3": {
+        "title": "AI Calculates Costs",
+        "description": "Our model analyzes data and calculates total costs."
+      },
+      "step4": {
+        "title": "View Results",
+        "description": "Compare all costs clearly and interactively."
+      }
     },
-    "step4": {
-      "title": "View Results",
-      "description": "Compare all costs clearly and interactively."
+    "ExampleOutputSection": {
+      "title": "Example Result",
+      "subtitle": "VW Golf 1.5 TSI vs. Opel Astra 1.2 Turbo over 5 years / 75,000 km",
+      "chartPlaceholder": "[Chart coming here]",
+      "tablePlaceholder": "[Comparison table coming here]"
     }
   },
-  "Navbar": {
-    "welcome": "Welcome, {name}",
-    "login": "Login",
-    "logout": "Logout"
+  "Components": {
+    "Navbar": {
+      "welcome": "Welcome, {name}",
+      "login": "Login",
+      "logout": "Logout"
+    }
   }
 }
