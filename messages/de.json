@@ -90,6 +90,11 @@
                 "title": "Bereit, den wahren Preis deines Autos zu entdecken?",
                 "button": "Jetzt kostenlos starten"
             }
+        },
+        "Navbar": {
+            "welcome": "Willkommen",
+            "logout": "Abmelden",
+            "login": "Anmelden"
         }
     }
 }

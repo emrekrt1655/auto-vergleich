@@ -90,6 +90,11 @@
                 "title": "Arabanın gerçek maliyetini keşfetmeye hazır mısın?",
                 "button": "Şimdi ücretsiz başla"
             }
+        },
+         "Navbar": {
+            "welcome": "Hoşgeldin",
+            "logout": "Çıkış",
+            "login": "Kayıt ol"
         }
     }
 }

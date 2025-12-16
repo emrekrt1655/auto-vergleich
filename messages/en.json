@@ -90,6 +90,12 @@
                 "title": "Ready to discover the true cost of your car?",
                 "button": "Start for free now"
             }
+        },
+         "Navbar": {
+            "welcome": "Welcome",
+            "logout": "Logout",
+            "login": "Login"
         }
+       
     }
 }
