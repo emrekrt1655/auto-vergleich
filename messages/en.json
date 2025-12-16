@@ -104,5 +104,16 @@
                 "contact": "Contact"
             }
         }
+    },
+    "DashboardPage": {
+        "title": "Compare two vehicles in detail",
+        "description": "Enter the vehicle data – our system calculates long-term costs such as depreciation, insurance, and fuel consumption to help you make the best decision.",
+        "vehicle1": "Vehicle 1",
+        "vehicle2": "Vehicle 2",
+        "compareButton": "Compare",
+        "toast": {
+            "missingCars": "Please fill in both vehicles!",
+            "compareError": "Error comparing vehicles."
+        }
     }
 }

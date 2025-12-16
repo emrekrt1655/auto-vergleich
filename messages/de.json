@@ -104,5 +104,16 @@
                 "contact": "Kontakt"
             }
         }
+    },
+    "DashboardPage": {
+    "title": "Vergleiche zwei Fahrzeuge im Detail",
+    "description": "Gib die Fahrzeugdaten ein – unser System berechnet langfristige Kosten wie Wertverlust, Versicherung und Verbrauch, damit du die beste Entscheidung treffen kannst.",
+    "vehicle1": "Fahrzeug 1",
+    "vehicle2": "Fahrzeug 2",
+    "compareButton": "Vergleichen",
+    "toast": {
+      "missingCars": "Bitte beide Fahrzeuge ausfüllen!",
+      "compareError": "Fehler beim Vergleichen der Fahrzeuge."
     }
+  }
 }

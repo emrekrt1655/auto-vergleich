@@ -104,5 +104,16 @@
                 "contact": "İletişim"
             }
         }
+    },
+    "DashboardPage": {
+        "title": "İki aracı detaylı şekilde karşılaştır",
+        "description": "Araç bilgilerini gir – sistemimiz değer kaybı, sigorta ve yakıt tüketimi gibi uzun vadeli maliyetleri hesaplayarak en iyi kararı vermene yardımcı olur.",
+        "vehicle1": "Araç 1",
+        "vehicle2": "Araç 2",
+        "compareButton": "Karşılaştır",
+        "toast": {
+            "missingCars": "Lütfen her iki aracı da doldur!",
+            "compareError": "Araçlar karşılaştırılırken bir hata oluştu."
+        }
     }
 }
