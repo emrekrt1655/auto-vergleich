@@ -1,0 +1,95 @@
+{
+    "Components": {
+        "LandingPage": {
+            "hero": {
+                "title": "Vergleiche den <highlight>wahren Preis</highlight> deines Autos",
+                "description": "Unser KI-Modell berechnet alle Kosten – von Kraftstoff über Versicherung bis zum Wertverlust – damit du die <bold>beste Entscheidung</bold> triffst.",
+                "button": "Jetzt kostenlos vergleichen"
+            },
+            "problemSection": {
+                "title": "Der wahre Preis eines Autos ist mehr als der Kaufpreis",
+                "description": "Viele Autokäufer unterschätzen laufende Kosten wie Versicherung, Wartung oder Wertverlust. Unser Tool zeigt dir, welches Fahrzeug langfristig wirklich günstiger ist – basierend auf realistischen deutschen Daten."
+            },
+            "howItWorksSection": {
+                "title": "So funktioniert’s",
+                "steps": [
+                    {
+                        "icon": "🚗",
+                        "title": "Fahrzeuge eingeben",
+                        "desc": "Wähle zwei Autos oder füge sie aus einem Inserat ein."
+                    },
+                    {
+                        "icon": "📅",
+                        "title": "Nutzungsdauer wählen",
+                        "desc": "Definiere, wie lange du das Auto behalten willst."
+                    },
+                    {
+                        "icon": "🤖",
+                        "title": "KI berechnet Kosten",
+                        "desc": "Unser Modell analysiert Daten und berechnet die Gesamtkosten."
+                    },
+                    {
+                        "icon": "📊",
+                        "title": "Ergebnis ansehen",
+                        "desc": "Vergleiche alle Kosten übersichtlich und interaktiv."
+                    }
+                ]
+            },
+            "featuresSection": {
+                "title": "Warum unser Vergleich einzigartig ist",
+                "features": [
+                    {
+                        "icon": "🇩🇪",
+                        "title": "Deutsche Marktdaten",
+                        "desc": "KFZ-Steuer, SF-Klasse und regionale Spritpreise integriert."
+                    },
+                    {
+                        "icon": "🤖",
+                        "title": "KI-basierte Modelle",
+                        "desc": "Präzise Wertverlust- und Wartungsvorhersagen."
+                    },
+                    {
+                        "icon": "📈",
+                        "title": "Klare Visualisierungen",
+                        "desc": "Charts und Tabellen zeigen, wo dein Geld hingeht."
+                    },
+                    {
+                        "icon": "💡",
+                        "title": "Einfache Bedienung",
+                        "desc": "Schnell, intuitiv und auf jedem Gerät nutzbar."
+                    }
+                ]
+            },
+            "exampleOutputSection": {
+                "title": "Beispiel-Ergebnis",
+                "description": "VW Golf 1.5 TSI vs. Opel Astra 1.2 Turbo über 5 Jahre / 75.000 km",
+                "chartPlaceholder": "[Chart kommt hier]",
+                "tablePlaceholder": "[Vergleichstabelle kommt hier]"
+            },
+            "testimonialsSection": {
+                "title": "Was Nutzer sagen",
+                "testimonials": [
+                    {
+                        "quote": "Super einfach und hilft wirklich bei der Kaufentscheidung!",
+                        "name": "Lena M.",
+                        "role": "Autokäuferin aus München"
+                    },
+                    {
+                        "quote": "Endlich sehe ich, was mein Auto mich wirklich kostet.",
+                        "name": "Thomas K.",
+                        "role": "Pendler aus Köln"
+                    },
+                    {
+                        "quote": "Tolles Tool – spare mir sicher ein paar tausend Euro.",
+                        "name": "Jörg F.",
+                        "role": "Familienvater aus Hamburg"
+                    }
+                ]
+            },
+            "callToActionSection": {
+                "title": "Bereit, den wahren Preis deines Autos zu entdecken?",
+                "button": "Jetzt kostenlos starten"
+            }
+        }
+    }
+}

@@ -1,0 +1,95 @@
+{
+    "Components": {
+        "LandingPage": {
+            "hero": {
+                "title": "Compare the <highlight>true price</highlight> of your car",
+                "description": "Our AI model calculates all costs – from fuel and insurance to depreciation – so you can make the <bold>best decision</bold>.",
+                "button": "Compare for free now"
+            },
+            "problemSection": {
+                "title": "The true cost of a car is more than its purchase price",
+                "description": "Many car buyers underestimate ongoing costs such as insurance, maintenance, or depreciation. Our tool shows you which vehicle is truly cheaper in the long run – based on realistic German data."
+            },
+            "howItWorksSection": {
+                "title": "How it works",
+                "steps": [
+                    {
+                        "icon": "🚗",
+                        "title": "Enter vehicles",
+                        "desc": "Select two cars or paste them from a listing."
+                    },
+                    {
+                        "icon": "📅",
+                        "title": "Choose usage duration",
+                        "desc": "Define how long you plan to keep the car."
+                    },
+                    {
+                        "icon": "🤖",
+                        "title": "AI calculates costs",
+                        "desc": "Our model analyzes data and calculates the total costs."
+                    },
+                    {
+                        "icon": "📊",
+                        "title": "View results",
+                        "desc": "Compare all costs clearly and interactively."
+                    }
+                ]
+            },
+            "featuresSection": {
+                "title": "Why our comparison is unique",
+                "features": [
+                    {
+                        "icon": "🇩🇪",
+                        "title": "German market data",
+                        "desc": "Includes vehicle tax, no-claims class, and regional fuel prices."
+                    },
+                    {
+                        "icon": "🤖",
+                        "title": "AI-based models",
+                        "desc": "Accurate predictions for depreciation and maintenance costs."
+                    },
+                    {
+                        "icon": "📈",
+                        "title": "Clear visualizations",
+                        "desc": "Charts and tables show where your money goes."
+                    },
+                    {
+                        "icon": "💡",
+                        "title": "Easy to use",
+                        "desc": "Fast, intuitive, and works on any device."
+                    }
+                ]
+            },
+            "exampleOutputSection": {
+                "title": "Example result",
+                "description": "VW Golf 1.5 TSI vs. Opel Astra 1.2 Turbo over 5 years / 75,000 km",
+                "chartPlaceholder": "[Chart will appear here]",
+                "tablePlaceholder": "[Comparison table will appear here]"
+            },
+            "testimonialsSection": {
+                "title": "What users say",
+                "testimonials": [
+                    {
+                        "quote": "Super easy and really helps with the buying decision!",
+                        "name": "Lena M.",
+                        "role": "Car buyer from Munich"
+                    },
+                    {
+                        "quote": "Finally, I can see what my car really costs me.",
+                        "name": "Thomas K.",
+                        "role": "Commuter from Cologne"
+                    },
+                    {
+                        "quote": "Great tool – definitely saves me a few thousand euros.",
+                        "name": "Jörg F.",
+                        "role": "Father of a family from Hamburg"
+                    }
+                ]
+            },
+            "callToActionSection": {
+                "title": "Ready to discover the true cost of your car?",
+                "button": "Start for free now"
+            }
+        }
+    }
+}

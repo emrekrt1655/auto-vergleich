@@ -2,7 +2,7 @@
 import CarForm, { CarFormHandle } from "@/app/components/CarForm";
 import { useContext, useRef, useState } from "react";
 import { ToastContext } from "@/app/(context)/toastContext";
-import Results from "../components/results/Results";
+import Results from "@/app/components/results/Results";
 import mockData from "@/data/aiModelMockData.json" assert { type: "json" };
 
 export default function DashboardPage() {

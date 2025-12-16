@@ -1,0 +1,95 @@
+{
+    "Components": {
+        "LandingPage": {
+            "hero": {
+                "title": "Arabanın <highlight>gerçek fiyatını</highlight> karşılaştır",
+                "description": "Yapay zekâ modelimiz yakıt, sigorta ve değer kaybı dahil tüm maliyetleri hesaplar, böylece <bold>en iyi kararı</bold> verebilirsin.",
+                "button": "Şimdi ücretsiz karşılaştır"
+            },
+            "problemSection": {
+                "title": "Bir arabanın gerçek maliyeti sadece satın alma fiyatından ibaret değildir",
+                "description": "Birçok araç alıcısı sigorta, bakım veya değer kaybı gibi devam eden masrafları küçümser. Aracımız, gerçekçi Alman verilerine dayanarak hangi aracın uzun vadede gerçekten daha uygun olduğunu gösterir."
+            },
+            "howItWorksSection": {
+                "title": "Nasıl çalışır",
+                "steps": [
+                    {
+                        "icon": "🚗",
+                        "title": "Araçları gir",
+                        "desc": "İki aracı seç ya da bir ilan bağlantısından ekle."
+                    },
+                    {
+                        "icon": "📅",
+                        "title": "Kullanım süresini seç",
+                        "desc": "Aracı ne kadar süreyle kullanmak istediğini belirle."
+                    },
+                    {
+                        "icon": "🤖",
+                        "title": "Yapay zekâ maliyetleri hesaplar",
+                        "desc": "Modelimiz verileri analiz eder ve toplam maliyetleri hesaplar."
+                    },
+                    {
+                        "icon": "📊",
+                        "title": "Sonuçları görüntüle",
+                        "desc": "Tüm maliyetleri net ve etkileşimli bir şekilde karşılaştır."
+                    }
+                ]
+            },
+            "featuresSection": {
+                "title": "Karşılaştırmamız neden benzersiz",
+                "features": [
+                    {
+                        "icon": "🇩🇪",
+                        "title": "Alman piyasa verileri",
+                        "desc": "Motorlu taşıt vergisi, hasarsızlık sınıfı ve bölgesel yakıt fiyatlarını içerir."
+                    },
+                    {
+                        "icon": "🤖",
+                        "title": "Yapay zekâ tabanlı modeller",
+                        "desc": "Değer kaybı ve bakım maliyetleri için hassas tahminler sağlar."
+                    },
+                    {
+                        "icon": "📈",
+                        "title": "Net görselleştirmeler",
+                        "desc": "Grafikler ve tablolar paran nereye gidiyor gösterir."
+                    },
+                    {
+                        "icon": "💡",
+                        "title": "Kolay kullanım",
+                        "desc": "Hızlı, sezgisel ve her cihazda kullanılabilir."
+                    }
+                ]
+            },
+            "exampleOutputSection": {
+                "title": "Örnek sonuç",
+                "description": "VW Golf 1.5 TSI ve Opel Astra 1.2 Turbo – 5 yıl / 75.000 km karşılaştırması",
+                "chartPlaceholder": "[Grafik burada görünecek]",
+                "tablePlaceholder": "[Karşılaştırma tablosu burada görünecek]"
+            },
+            "testimonialsSection": {
+                "title": "Kullanıcı yorumları",
+                "testimonials": [
+                    {
+                        "quote": "Kullanımı çok kolay ve gerçekten satın alma kararında yardımcı oluyor!",
+                        "name": "Lena M.",
+                        "role": "Münih’ten araç alıcısı"
+                    },
+                    {
+                        "quote": "Sonunda arabamın bana gerçekte neye mal olduğunu görebiliyorum.",
+                        "name": "Thomas K.",
+                        "role": "Köln’den işe giden kullanıcı"
+                    },
+                    {
+                        "quote": "Harika bir araç – bana kesinlikle birkaç bin euro kazandırdı.",
+                        "name": "Jörg F.",
+                        "role": "Hamburg’dan bir aile babası"
+                    }
+                ]
+            },
+            "callToActionSection": {
+                "title": "Arabanın gerçek maliyetini keşfetmeye hazır mısın?",
+                "button": "Şimdi ücretsiz başla"
+            }
+        }
+    }
+}
