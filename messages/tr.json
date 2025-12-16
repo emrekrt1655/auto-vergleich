@@ -103,6 +103,45 @@
                 "privacy": "Gizlilik Politikası",
                 "contact": "İletişim"
             }
+        },
+        "Results": {
+            "resultsSummaryCard": {
+                "title": "Yapay Zeka Tavsiyesi"
+            },
+            "comparisonTable": {
+                "title": "Maliyet Özeti",
+                "headers": {
+                    "costItem": "Maliyet Kalemi",
+                    "car1": "Araç 1",
+                    "car2": "Araç 2"
+                },
+                "fields": {
+                    "fuelCostEUR": "Yakıt maliyeti (€)",
+                    "fuelConsumptionL": "Tüketim (L)",
+                    "insuranceCostEUR": "Sigorta (€)",
+                    "maintenanceCostEUR": "Bakım (€)",
+                    "tuvCostEUR": "Muayene (TÜV) (€)",
+                    "estimatedResaleValueEUR": "Tahmini ikinci el değeri (€)",
+                    "totalCostEUR": "Toplam maliyet (€)"
+                }
+            },
+            "costChart": {
+                "title": "Maliyet karşılaştırması (€)",
+                "labels": {
+                    "fuel": "Yakıt",
+                    "insurance": "Sigorta",
+                    "maintenance": "Bakım",
+                    "tuv": "Muayene (TÜV)",
+                    "total": "Toplam"
+                },
+                "legend": {
+                    "car1": "Araç 1",
+                    "car2": "Araç 2"
+                }
+            },
+            "comparisonInsights": {
+                "title": "Detaylı karşılaştırma"
+            }
         }
     },
     "DashboardPage": {

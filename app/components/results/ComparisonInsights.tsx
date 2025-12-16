@@ -1,14 +1,18 @@
+"use client";
 import { CheckCircle } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 interface Props {
   comparison: Record<string, string>;
 }
 
 export default function ComparisonInsights({ comparison }: Props) {
+  const t = useTranslations("Components.Results.comparisonInsights");
+
   return (
     <div className="bg-gray-50 p-6 rounded-2xl border border-gray-200">
       <h3 className="text-lg font-semibold text-gray-800 mb-4">
-        Detaillierter Vergleich
+        {t("title")}
       </h3>
       <ul className="space-y-2">
         {Object.entries(comparison).map(([key, value]) => (

@@ -1,4 +1,5 @@
 import { Lightbulb } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 interface Props {
   summary: string;
@@ -6,6 +7,7 @@ interface Props {
 }
 
 export default function ResultsSummaryCard({ summary, recommendation }: Props) {
+  const t = useTranslations("Components.Results.resultsSummaryCard")
   return (
     <div className="bg-linear-to-r from-blue-50 to-blue-100 border border-blue-200 rounded-2xl p-6 shadow-sm">
       <div className="flex items-start gap-4">
@@ -14,7 +16,7 @@ export default function ResultsSummaryCard({ summary, recommendation }: Props) {
         </div>
         <div>
           <h2 className="text-xl font-semibold text-blue-900 mb-2">
-            KI-Empfehlung
+            {t("title")}
           </h2>
           <p className="text-gray-800 mb-3">{summary}</p>
           <p className="font-semibold text-blue-700">{recommendation}</p>

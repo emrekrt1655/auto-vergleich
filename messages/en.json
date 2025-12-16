@@ -103,6 +103,45 @@
                 "privacy": "Privacy Policy",
                 "contact": "Contact"
             }
+        },
+        "Results": {
+            "resultsSummaryCard": {
+                "title": "AI Suggestion"
+            },
+            "comparisonTable": {
+                "title": "Cost overview",
+                "headers": {
+                    "costItem": "Cost item",
+                    "car1": "Car 1",
+                    "car2": "Car 2"
+                },
+                "fields": {
+                    "fuelCostEUR": "Fuel costs (€)",
+                    "fuelConsumptionL": "Consumption (L)",
+                    "insuranceCostEUR": "Insurance (€)",
+                    "maintenanceCostEUR": "Maintenance (€)",
+                    "tuvCostEUR": "Inspection (TÜV) (€)",
+                    "estimatedResaleValueEUR": "Estimated resale value (€)",
+                    "totalCostEUR": "Total costs (€)"
+                }
+            },
+            "costChart": {
+                "title": "Cost comparison (in €)",
+                "labels": {
+                    "fuel": "Fuel",
+                    "insurance": "Insurance",
+                    "maintenance": "Maintenance",
+                    "tuv": "Inspection (TÜV)",
+                    "total": "Total"
+                },
+                "legend": {
+                    "car1": "Car 1",
+                    "car2": "Car 2"
+                }
+            },
+            "comparisonInsights": {
+                "title": "Detailed comparison"
+            }
         }
     },
     "DashboardPage": {

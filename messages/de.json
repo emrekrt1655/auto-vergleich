@@ -103,17 +103,56 @@
                 "privacy": "Datenschutz",
                 "contact": "Kontakt"
             }
+        },
+        "Results": {
+            "resultsSummaryCard": {
+                "title": "KI Empfehlung"
+            },
+            "comparisonTable": {
+                "title": "Kostenübersicht",
+                "headers": {
+                    "costItem": "Kostenpunkt",
+                    "car1": "Fahrzeug 1",
+                    "car2": "Fahrzeug 2"
+                },
+                "fields": {
+                    "fuelCostEUR": "Kraftstoffkosten (€)",
+                    "fuelConsumptionL": "Verbrauch (L)",
+                    "insuranceCostEUR": "Versicherung (€)",
+                    "maintenanceCostEUR": "Wartung (€)",
+                    "tuvCostEUR": "TÜV (€)",
+                    "estimatedResaleValueEUR": "Wiederverkaufswert (€)",
+                    "totalCostEUR": "Gesamtkosten (€)"
+                }
+            },
+            "costChart": {
+                "title": "Kostenvergleich (in €)",
+                "labels": {
+                    "fuel": "Kraftstoff",
+                    "insurance": "Versicherung",
+                    "maintenance": "Wartung",
+                    "tuv": "TÜV",
+                    "total": "Gesamt"
+                },
+                "legend": {
+                    "car1": "Fahrzeug 1",
+                    "car2": "Fahrzeug 2"
+                }
+            },
+            "comparisonInsights": {
+                "title": "Detaillierter Vergleich"
+            }
         }
     },
     "DashboardPage": {
-    "title": "Vergleiche zwei Fahrzeuge im Detail",
-    "description": "Gib die Fahrzeugdaten ein – unser System berechnet langfristige Kosten wie Wertverlust, Versicherung und Verbrauch, damit du die beste Entscheidung treffen kannst.",
-    "vehicle1": "Fahrzeug 1",
-    "vehicle2": "Fahrzeug 2",
-    "compareButton": "Vergleichen",
-    "toast": {
-      "missingCars": "Bitte beide Fahrzeuge ausfüllen!",
-      "compareError": "Fehler beim Vergleichen der Fahrzeuge."
+        "title": "Vergleiche zwei Fahrzeuge im Detail",
+        "description": "Gib die Fahrzeugdaten ein – unser System berechnet langfristige Kosten wie Wertverlust, Versicherung und Verbrauch, damit du die beste Entscheidung treffen kannst.",
+        "vehicle1": "Fahrzeug 1",
+        "vehicle2": "Fahrzeug 2",
+        "compareButton": "Vergleichen",
+        "toast": {
+            "missingCars": "Bitte beide Fahrzeuge ausfüllen!",
+            "compareError": "Fehler beim Vergleichen der Fahrzeuge."
+        }
     }
-  }
 }
