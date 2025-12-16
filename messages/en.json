@@ -91,11 +91,18 @@
                 "button": "Start for free now"
             }
         },
-         "Navbar": {
+        "Navbar": {
             "welcome": "Welcome",
             "logout": "Logout",
             "login": "Login"
+        },
+        "footerSection": {
+            "copyright": "© {year} AutoCompare AI. All rights reserved.",
+            "links": {
+                "imprint": "Imprint",
+                "privacy": "Privacy Policy",
+                "contact": "Contact"
+            }
         }
-       
     }
 }

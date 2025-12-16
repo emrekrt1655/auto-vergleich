@@ -91,10 +91,18 @@
                 "button": "Şimdi ücretsiz başla"
             }
         },
-         "Navbar": {
+        "Navbar": {
             "welcome": "Hoşgeldin",
             "logout": "Çıkış",
             "login": "Kayıt ol"
+        },
+        "footerSection": {
+            "copyright": "© {year} AutoCompare AI. Tüm hakları saklıdır.",
+            "links": {
+                "imprint": "Künye",
+                "privacy": "Gizlilik Politikası",
+                "contact": "İletişim"
+            }
         }
     }
 }

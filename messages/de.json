@@ -95,6 +95,14 @@
             "welcome": "Willkommen",
             "logout": "Abmelden",
             "login": "Anmelden"
+        },
+        "footerSection": {
+            "copyright": "© {year} AutoCompare AI. Alle Rechte vorbehalten.",
+            "links": {
+                "imprint": "Impressum",
+                "privacy": "Datenschutz",
+                "contact": "Kontakt"
+            }
         }
     }
 }
