@@ -174,6 +174,18 @@
             "annualKmPlaceholder": "z. B. 15000",
             "purchasePrice": "Kaufpreis (€)",
             "purchasePricePlaceholder": "z. B. 25000"
+        },
+        "Login": {
+            "title": "Anmeldung",
+            "emailPlaceholder": "E-Mail-Adresse",
+            "passwordPlaceholder": "Passwort",
+            "loginButton": "Anmelden",
+            "loading": "Laden...",
+            "or": "Oder",
+            "googleLogin": "Mit Google anmelden",
+            "guestInfo": "Wenn du dich nicht anmelden möchtest, gehe zum <dashboard> Dashboard </dashboard> und benutze die App als Gast!",
+            "termsInfo": "Mit der Registrierung stimmst du unseren Nutzungsbedingungen zu.",
+            "dashboard": "Dashboard"
         }
     },
     "DashboardPage": {
