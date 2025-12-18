@@ -3,10 +3,11 @@ import CarForm, { CarFormHandle } from "@/app/components/CarForm";
 import { useContext, useRef, useState } from "react";
 import { ToastContext } from "@/app/(context)/toastContext";
 import Results from "@/app/components/results/Results";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 
 export default function DashboardPage() {
   const t = useTranslations("DashboardPage");
+  const locale = useLocale()
   const { setToast } = useContext(ToastContext);
 
   const car1Ref = useRef<CarFormHandle>(null);
@@ -26,7 +27,7 @@ export default function DashboardPage() {
       const response = await fetch("/api/cars/compare", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ car1, car2 }),
+        body: JSON.stringify({ car1, car2, locale }),
       });
 
       const data = await response.json();

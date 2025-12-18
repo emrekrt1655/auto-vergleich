@@ -4,7 +4,7 @@ import { compareCarsWithAI } from "@/services/openaiService";
 
 export async function POST(req: Request) {
   try {
-    const { car1, car2 } = await req.json();
+    const { car1, car2, locale } = await req.json();
 
     if (!car1 || !car2) {
       return NextResponse.json(
@@ -13,7 +13,7 @@ export async function POST(req: Request) {
       );
     }
 
-    const result = await compareCarsWithAI(car1, car2);
+    const result = await compareCarsWithAI(car1, car2, locale);
     return NextResponse.json({ result });
   } catch (error) {
     console.error("Fehler in compareCars route:", error);

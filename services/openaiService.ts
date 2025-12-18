@@ -4,8 +4,26 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY!,
 });
 
-export async function compareCarsWithAI(car1: any, car2: any) {
-const prompt = `
+const LANGUAGE_CONFIG = {
+  en: {
+    systemMessage: "You are a car expert that provides only JSON outputs, without any additional text. Respond in English.",
+    languageInstruction: "English"
+  },
+  de: {
+    systemMessage: "You are a car expert that provides only JSON outputs, without any additional text. Respond in German.",
+    languageInstruction: "German"
+  },
+  tr: {
+    systemMessage: "You are a car expert that provides only JSON outputs, without any additional text. Respond in Turkish.",
+    languageInstruction: "Turkish"
+  }
+} as const;
+
+export async function compareCarsWithAI(car1: any, car2: any, locale: string = "de") {
+  const lang = (locale in LANGUAGE_CONFIG ? locale : "de") as keyof typeof LANGUAGE_CONFIG;
+  const config = LANGUAGE_CONFIG[lang];
+
+  const prompt = `
 You are a car cost expert.
 
 Compare the following two cars objectively based on:
@@ -18,11 +36,11 @@ Compare the following two cars objectively based on:
 
 Estimate total ownership cost in EUR over the planned period.
 
-Return your response strictly as a JSON object in this structure (values and comments in German):
+Return your response strictly as a JSON object in this structure (all text values and comments MUST be in ${config.languageInstruction}):
 
 {
-  "summary": "Short summary in German",
-  "recommendation": "Recommendation in German, which car is more cost-efficient and why",
+  "summary": "Short summary in ${config.languageInstruction}",
+  "recommendation": "Recommendation in ${config.languageInstruction}, which car is more cost-efficient and why",
   "cars": {
     "car1": {
       "fuelCostEUR": number,
@@ -44,11 +62,11 @@ Return your response strictly as a JSON object in this structure (values and com
     }
   },
   "comparison": {
-    "fuelCost": "short German comment",
-    "insuranceCost": "short German comment",
-    "maintenanceCost": "short German comment",
-    "resaleValue": "short German comment",
-    "totalCost": "short German comment"
+    "fuelCost": "short comment in ${config.languageInstruction}",
+    "insuranceCost": "short comment in ${config.languageInstruction}",
+    "maintenanceCost": "short comment in ${config.languageInstruction}",
+    "resaleValue": "short comment in ${config.languageInstruction}",
+    "totalCost": "short comment in ${config.languageInstruction}"
   }
 }
 
@@ -56,15 +74,13 @@ Car 1: ${JSON.stringify(car1, null, 2)}
 Car 2: ${JSON.stringify(car2, null, 2)}
 `;
 
-
   try {
     const completion = await openai.chat.completions.create({
       model: "gpt-4o-mini",
       messages: [
         {
           role: "system",
-          content:
-            "You are a car expert that provides only JSON outputs, without any additional text.",
+          content: config.systemMessage,
         },
         { role: "user", content: prompt },
       ],
