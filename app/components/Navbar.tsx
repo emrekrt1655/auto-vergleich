@@ -10,6 +10,7 @@ import { useHandleRoute } from "@/hooks/useHandleRoute";
 import { useAuthModal } from "@/hooks/useAuthModal";
 import { useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
+import ToggleThemeButton from "./ToggleThemeButton"
 
 const Navbar = () => {
   const [isLangOpen, setIsLangOpen] = useState(false);
@@ -49,7 +50,12 @@ const Navbar = () => {
         Auto.Compare
       </span>
 
+
+
       <div className="flex items-center gap-4">
+        <div className="relative">
+          <ToggleThemeButton/>
+        </div>
         <div className="relative">
           <button
             onClick={() => setIsLangOpen(!isLangOpen)}
@@ -113,7 +119,7 @@ const Navbar = () => {
             onClick={openModal}
             className="bg-linear-to-r from-blue-600 to-purple-600 text-white px-6 py-2.5 rounded-lg font-semibold shadow-md hover:shadow-lg hover:scale-105 transition-all duration-200"
           >
-            Anmelden
+            {t("login")}
           </button>
         )}
       </div>
