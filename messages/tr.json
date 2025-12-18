@@ -142,6 +142,38 @@
             "comparisonInsights": {
                 "title": "Detaylı karşılaştırma"
             }
+        },
+        "CarSelect": {
+            "loading": " yükleniyor...",
+            "error": " yüklenirken bir hata oluştu"
+        },
+        "CarForm": {
+            "labelMarke": "Marka",
+            "labelMarkePlaceholder": "Marka seç",
+            "labelModelle": "Model",
+            "labelModellePlaceholder": "Model seç",
+            "labelVariente": "Varyant",
+            "labelVarientePlaceholder": "Varyant seç",
+            "baujahr": "Model Yılı",
+            "getriebe": "Vites Tipi",
+            "getriebeOption": "Seç",
+            "manuell": "Manuel",
+            "automatic": "Otomatik",
+            "fuelType": "Yakıt türü",
+            "fuelTypeOption": "Seç",
+            "fuelBenzin": "Benzin",
+            "fuelDiesel": "Dizel",
+            "fuelHybrid": "Hibrit",
+            "fuelElectric": "Elektrik",
+            "consumption": "Tüketim (l / 100 km)",
+            "consumptionPlaceholder": "ör. 6.2",
+            "inspectionDate": "Son muayene (ay / yıl)",
+            "usageYears": "Planlanan kullanım süresi (yıl)",
+            "usageYearsPlaceholder": "ör. 5",
+            "annualKm": "Yıllık kilometre",
+            "annualKmPlaceholder": "ör. 15000",
+            "purchasePrice": "Satın alma fiyatı (€)",
+            "purchasePricePlaceholder": "ör. 25000"
         }
     },
     "DashboardPage": {

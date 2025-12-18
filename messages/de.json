@@ -142,6 +142,38 @@
             "comparisonInsights": {
                 "title": "Detaillierter Vergleich"
             }
+        },
+        "CarSelect": {
+            "loading": "Lade ",
+            "error": "Fehler beim Laden der "
+        },
+        "CarForm": {
+            "labelMarke": "Marke",
+            "labelMarkePlaceholder": "Marke wählen",
+            "labelModelle": "Modelle",
+            "labelModellePlaceholder": "Modelle wählen",
+            "labelVariente": "Variante",
+            "labelVarientePlaceholder": "Variante wählen",
+            "baujahr": "Baujahr",
+            "getriebe": "Getriebe",
+            "getriebeOption": "Auswählen",
+            "manuell": "Manuell",
+            "automatic": "Automatic",
+            "fuelType": "Kraftstoffart",
+            "fuelTypeOption": "Auswählen",
+            "fuelBenzin": "Benzin",
+            "fuelDiesel": "Diesel",
+            "fuelHybrid": "Hybrid",
+            "fuelElectric": "Elektro",
+            "consumption": "Verbrauch (l / 100 km)",
+            "consumptionPlaceholder": "z. B. 6.2",
+            "inspectionDate": "Letzte HU (Monat / Jahr)",
+            "usageYears": "Geplante Nutzungsdauer (Jahre)",
+            "usageYearsPlaceholder": "z. B. 5",
+            "annualKm": "Jährliche Laufleistung (km)",
+            "annualKmPlaceholder": "z. B. 15000",
+            "purchasePrice": "Kaufpreis (€)",
+            "purchasePricePlaceholder": "z. B. 25000"
         }
     },
     "DashboardPage": {

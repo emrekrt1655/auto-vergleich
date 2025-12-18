@@ -1,5 +1,6 @@
 "use client";
 import { useState, useImperativeHandle, forwardRef } from "react";
+import { useTranslations } from "next-intl";
 import { CarSelect } from "./CarSelect";
 import {
   useCarBrands,
@@ -26,6 +27,7 @@ const initialForm = {
 };
 
 const CarForm = forwardRef<CarFormHandle>((_, ref) => {
+  const t = useTranslations("Components.CarForm");
   const [form, setForm] = useState(initialForm);
 
   const handleChange = (
@@ -42,8 +44,8 @@ const CarForm = forwardRef<CarFormHandle>((_, ref) => {
     <form className="space-y-4">
       <div>
         <CarSelect
-          label="Marke"
-          placeholder="Marke wählen"
+          label={t("labelMarke")}
+          placeholder={t("labelMarkePlaceholder")}
           formKey="brand"
           hook={useCarBrands}
           getOptionLabel={(b) => b.name}
@@ -54,8 +56,8 @@ const CarForm = forwardRef<CarFormHandle>((_, ref) => {
 
       <div>
         <CarSelect
-          label="Modelle"
-          placeholder="Modelle wählen"
+          label={t("labelModelle")}
+          placeholder={t("labelModellePlaceholder")}
           formKey="model"
           hook={() => useCarModels(form.brand)}
           getOptionLabel={(m) => m.name}
@@ -66,8 +68,8 @@ const CarForm = forwardRef<CarFormHandle>((_, ref) => {
 
       <div>
         <CarSelect
-          label="Variente"
-          placeholder="Variente wählen"
+          label={t("labelVariente")}
+          placeholder={t("labelVarientePlaceholder")}
           formKey="variant"
           hook={() => useCarSubModels(form.brand, form.model)}
           getOptionLabel={(v) => v.submodel}
@@ -77,50 +79,54 @@ const CarForm = forwardRef<CarFormHandle>((_, ref) => {
       </div>
 
       <div>
-        <label className="block text-sm font-medium mb-1">Baujahr</label>
+        <label className="block text-sm font-medium mb-1">{t("baujahr")}</label>
         <input
           type="number"
           name="year"
           value={form.year}
           onChange={handleChange}
-          placeholder="z. B. 2018"
+          placeholder="2018"
           className="w-full border rounded-md p-2"
         />
       </div>
 
       <div>
-        <label className="block text-sm font-medium mb-1">Getriebe</label>
+        <label className="block text-sm font-medium mb-1">
+          {t("getriebe")}
+        </label>
         <select
           name="transmission"
           value={form.transmission}
           onChange={handleChange}
           className="w-full border rounded-md p-2"
         >
-          <option value="">Auswählen</option>
-          <option value="manuell">Manuell</option>
-          <option value="automatik">Automatik</option>
+          <option value="">{t("getriebeOption")}</option>
+          <option value="manuell">{t("manuell")}</option>
+          <option value="automatik">{t("automatic")}</option>
         </select>
       </div>
 
       <div>
-        <label className="block text-sm font-medium mb-1">Kraftstoffart</label>
+        <label className="block text-sm font-medium mb-1">
+          {t("fuelType")}
+        </label>
         <select
           name="fuelType"
           value={form.fuelType}
           onChange={handleChange}
           className="w-full border rounded-md p-2"
         >
-          <option value="">Auswählen</option>
-          <option value="benzin">Benzin</option>
-          <option value="diesel">Diesel</option>
-          <option value="hybrid">Hybrid</option>
-          <option value="elektro">Elektro</option>
+          <option value="">{t("fuelTypeOption")}</option>
+          <option value="benzin">{t("fuelBenzin")}</option>
+          <option value="diesel">{t("fuelDiesel")}</option>
+          <option value="hybrid">{t("fuelHybrid")}</option>
+          <option value="elektro">{t("fuelElectric")}</option>
         </select>
       </div>
 
       <div>
         <label className="block text-sm font-medium mb-1">
-          Verbrauch (l / 100 km)
+          {t("consumption")}
         </label>
         <input
           type="number"
@@ -128,14 +134,14 @@ const CarForm = forwardRef<CarFormHandle>((_, ref) => {
           name="consumption"
           value={form.consumption}
           onChange={handleChange}
-          placeholder="z. B. 6.2"
+          placeholder={t("consumptionPlaceholder")}
           className="w-full border rounded-md p-2"
         />
       </div>
 
       <div>
         <label className="block text-sm font-medium mb-1">
-          Letzte HU (Monat / Jahr)
+          {t("inspectionDate")}
         </label>
         <input
           type="month"
@@ -148,40 +154,42 @@ const CarForm = forwardRef<CarFormHandle>((_, ref) => {
 
       <div>
         <label className="block text-sm font-medium mb-1">
-          Geplante Nutzungsdauer (Jahre)
+          {t("usageYears")}
         </label>
         <input
           type="number"
           name="usageYears"
           value={form.usageYears}
           onChange={handleChange}
-          placeholder="z. B. 5"
+          placeholder={t("usageYearsPlaceholder")}
           className="w-full border rounded-md p-2"
         />
       </div>
 
       <div>
         <label className="block text-sm font-medium mb-1">
-          Jährliche Laufleistung (km)
+          {t("annualKm")}{" "}
         </label>
         <input
           type="number"
           name="annualKm"
           value={form.annualKm}
           onChange={handleChange}
-          placeholder="z. B. 15000"
+          placeholder={t("annualKmPlaceholder")}
           className="w-full border rounded-md p-2"
         />
       </div>
 
       <div>
-        <label className="block text-sm font-medium mb-1">Kaufpreis (€)</label>
+        <label className="block text-sm font-medium mb-1">
+          {t("purchasePrice")}{" "}
+        </label>
         <input
           type="number"
           name="purchasePrice"
           value={form.purchasePrice}
           onChange={handleChange}
-          placeholder="z. B. 25000"
+          placeholder={t("purchasePricePlaceholder")}
           className="w-full border rounded-md p-2"
         />
       </div>

@@ -1,4 +1,5 @@
 "use client";
+import { useTranslations } from "next-intl";
 
 type CarSelectProps<T> = {
   label: string;
@@ -19,11 +20,12 @@ export function CarSelect<T>({
   getOptionValue,
   setForm,
 }: CarSelectProps<T>) {
+  const t = useTranslations("Components.CarSelect")
   const { data, isLoading, isError } = hook();
 
-  if (isLoading) return <p className="text-gray-500">Lade {label}...</p>;
+  if (isLoading) return <p className="text-gray-500">{t("loading")} {label}...</p>;
   if (isError)
-    return <p className="text-red-500">Fehler beim Laden der {label}</p>;
+    return <p className="text-red-500">{t("error")} {label}</p>;
 
   return (
     <div>
