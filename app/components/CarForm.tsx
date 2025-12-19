@@ -2,6 +2,7 @@
 import { useState, useImperativeHandle, forwardRef } from "react";
 import { useTranslations } from "next-intl";
 import { CarSelect } from "./CarSelect";
+import { carFormClasses } from "../styles/classes";
 import {
   useCarBrands,
   useCarModels,
@@ -28,6 +29,7 @@ const initialForm = {
 
 const CarForm = forwardRef<CarFormHandle>((_, ref) => {
   const t = useTranslations("Components.CarForm");
+  const { textColor, placeHolderColor } = carFormClasses;
   const [form, setForm] = useState(initialForm);
 
   const handleChange = (
@@ -41,7 +43,7 @@ const CarForm = forwardRef<CarFormHandle>((_, ref) => {
   }));
 
   return (
-    <form className="space-y-4">
+    <form className={`space-y-4`}>
       <div>
         <CarSelect
           label={t("labelMarke")}
@@ -79,14 +81,14 @@ const CarForm = forwardRef<CarFormHandle>((_, ref) => {
       </div>
 
       <div>
-        <label className="block text-sm font-medium mb-1">{t("baujahr")}</label>
+        <label className={`block text-sm font-medium mb-1 ${textColor}`}>{t("baujahr")}</label>
         <input
           type="number"
           name="year"
           value={form.year}
           onChange={handleChange}
           placeholder="2018"
-          className="w-full border rounded-md p-2"
+          className={`${placeHolderColor} w-full border rounded-md p-2`}
         />
       </div>
 
@@ -135,7 +137,7 @@ const CarForm = forwardRef<CarFormHandle>((_, ref) => {
           value={form.consumption}
           onChange={handleChange}
           placeholder={t("consumptionPlaceholder")}
-          className="w-full border rounded-md p-2"
+          className={`${placeHolderColor} w-full border rounded-md p-2`}
         />
       </div>
 
@@ -148,7 +150,7 @@ const CarForm = forwardRef<CarFormHandle>((_, ref) => {
           name="inspectionDate"
           value={form.inspectionDate}
           onChange={handleChange}
-          className="w-full border rounded-md p-2"
+          className={`${placeHolderColor} w-full border rounded-md p-2`}
         />
       </div>
 
@@ -162,7 +164,7 @@ const CarForm = forwardRef<CarFormHandle>((_, ref) => {
           value={form.usageYears}
           onChange={handleChange}
           placeholder={t("usageYearsPlaceholder")}
-          className="w-full border rounded-md p-2"
+          className={`${placeHolderColor} w-full border rounded-md p-2`}
         />
       </div>
 
@@ -176,7 +178,7 @@ const CarForm = forwardRef<CarFormHandle>((_, ref) => {
           value={form.annualKm}
           onChange={handleChange}
           placeholder={t("annualKmPlaceholder")}
-          className="w-full border rounded-md p-2"
+          className={`${placeHolderColor} w-full border rounded-md p-2`}
         />
       </div>
 
@@ -190,7 +192,7 @@ const CarForm = forwardRef<CarFormHandle>((_, ref) => {
           value={form.purchasePrice}
           onChange={handleChange}
           placeholder={t("purchasePricePlaceholder")}
-          className="w-full border rounded-md p-2"
+          className={`${placeHolderColor} w-full border rounded-md p-2`}
         />
       </div>
     </form>

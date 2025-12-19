@@ -4,9 +4,11 @@ import { useContext, useRef, useState } from "react";
 import { ToastContext } from "@/app/(context)/toastContext";
 import Results from "@/app/components/results/Results";
 import { useTranslations, useLocale } from "next-intl";
+import { dashboardClasses } from "@/app/styles/classes";
 
 export default function DashboardPage() {
   const t = useTranslations("DashboardPage");
+  const {textColor, wrapperColor} = dashboardClasses;
   const locale = useLocale()
   const { setToast } = useContext(ToastContext);
 
@@ -41,21 +43,21 @@ export default function DashboardPage() {
   return (
     <div className="min-h-screen py-16 px-6">
       <section className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-brand-neutral mb-4">
+        <h1 className={`text-4xl font-bold ${textColor} mb-4`}>
           {t("title")}
         </h1>
-        <p className="text-gray-600 max-w-2xl mx-auto">{t("description")}</p>
+        <p className={`${textColor} max-w-2xl mx-auto`}>{t("description")}</p>
       </section>
 
-      <section className="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
-        <div className=" p-6 rounded-xl shadow-sm">
+      <section className={`grid md:grid-cols-2 gap-10 max-w-6xl mx-auto`}>
+        <div className={` ${wrapperColor} p-6 rounded-xl shadow-sm`}>
           <h2 className="text-lg font-semibold mb-4 text-brand-primary">
             {t("vehicle1")}
           </h2>
           <CarForm ref={car1Ref} />
         </div>
 
-        <div className=" p-6 rounded-xl shadow-sm">
+        <div className={` ${wrapperColor} p-6 rounded-xl shadow-sm`}>
           <h2 className="text-lg font-semibold mb-4 text-brand-secondary">
             {t("vehicle2")}
           </h2>

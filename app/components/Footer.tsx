@@ -1,11 +1,13 @@
 "use client";
 import { useTranslations } from "next-intl";
+import {footerClasses} from "@/app/styles/classes"
 
 export default function FooterSection() {
   const t = useTranslations("Components.footerSection");
+  const {footerWrapper} = footerClasses
 
   return (
-    <footer className="py-10 bg-gray-100 dark:bg-[#111] text-center text-sm text-gray-600 dark:text-gray-400">
+    <footer className={`py-10 ${footerWrapper} text-center text-sm`}>
       <p>{t("copyright", { year: new Date().getFullYear() })}</p>
 
       {/* 
