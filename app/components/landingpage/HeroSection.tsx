@@ -3,9 +3,11 @@ import { useAuth } from "../../(context)/authContext";
 import { useHandleRoute } from "@/hooks/useHandleRoute";
 import { useAuthModal } from "@/hooks/useAuthModal";
 import { useTranslations } from "next-intl";
+import { landingPrimary } from "@/app/styles/classes";
 
 export default function Hero() {
   const t = useTranslations("Components.LandingPage.hero");
+  const {wrapperColor, titleText} = landingPrimary;
   const { user } = useAuth();
   const { handleRoute } = useHandleRoute();
   const { openModal } = useAuthModal();
@@ -19,15 +21,17 @@ export default function Hero() {
   };
 
   return (
-    <section className="w-full h-[70vh] flex flex-col justify-center items-center text-center px-4">
+    <section className={`${wrapperColor} w-full h-[70vh] flex flex-col justify-center items-center text-center px-4`}>
       <div className="max-w-3xl">
-        <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
+        <h1 className={`${titleText} text-4xl md:text-5xl font-extrabold mb-30`}>
           {t.rich("title", {
-            highlight: (chunks) => <span className="text-brand-accent">{chunks}</span>,
+            highlight: (chunks) => (
+              <span className="text-brand-accent">{chunks}</span>
+            ),
           })}
         </h1>
 
-        <p className="text-base md:text-lg text-gray-700 mb-8">
+        <p className="text-base md:text-lg  mb-8">
           {t.rich("description", {
             bold: (chunks) => <span className="font-semibold">{chunks}</span>,
           })}

@@ -63,8 +63,7 @@ const Login: React.FC<LoginProps> = ({ onClose }) => {
   };
 
   return (
-    <>
-      <div className="w-full max-w-sm p-8 border rounded-lg shadow-lg flex flex-col gap-4">
+      <div className=" w-full max-w-sm p-8 border rounded-lg shadow-lg flex flex-col gap-4">
         <h2 className="text-2xl font-bold text-center">{t("title")}</h2>
 
         <input
@@ -115,7 +114,7 @@ const Login: React.FC<LoginProps> = ({ onClose }) => {
           {t("termsInfo")}{" "}
         </p>
       </div>
-    </>
+    
   );
 };
 

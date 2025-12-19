@@ -1,7 +1,11 @@
 import { useTranslations } from "next-intl";
+import { landingPrimary } from "@/app/styles/classes";
+
 
 export default function ExampleOutputSection() {
   const t = useTranslations("Components.LandingPage.exampleOutputSection");
+    const { wrapperColor, featuresWrapperColor, titleText, textColor } =
+      landingPrimary;
 
   return (
     <section className="py-20 bg-(--background) text-(--foreground) text-center px-6">

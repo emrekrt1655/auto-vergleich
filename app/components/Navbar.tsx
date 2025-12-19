@@ -11,11 +11,13 @@ import { useAuthModal } from "@/hooks/useAuthModal";
 import { useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
 import ToggleThemeButton from "./ToggleThemeButton"
+import { navbarClasses } from "../styles/classes";
 
 const Navbar = () => {
   const [isLangOpen, setIsLangOpen] = useState(false);
   const t = useTranslations("Components.Navbar");
   const pathname = usePathname();
+  const {wrapperColor, textColor} = navbarClasses;
 
   const languages = [
     { code: "de", name: "Deutsch", flag: "🇩🇪" },
@@ -45,7 +47,7 @@ const Navbar = () => {
   const userName = useUserName();
 
   return (
-    <header className="flex justify-between items-center p-4 border-b border-gray-200">
+    <header className={`${wrapperColor} flex justify-between items-center  p-4 border-b`}>
       <span className="text-2xl font-bold bg-linear-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
         Auto.Compare
       </span>
@@ -79,17 +81,17 @@ const Navbar = () => {
                 className="fixed inset-0 z-10" 
                 onClick={() => setIsLangOpen(false)}
               />
-              <div className="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 py-1 z-20">
+              <div className={` ${wrapperColor} absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 py-1 z-20`}>
                 {languages.map((lang) => (
                   <button
                     key={lang.code}
                     onClick={() => handleLanguageChange(lang.code)}
-                    className={`w-full cursor-pointer flex items-center gap-3 px-4 py-2.5 hover:bg-gray-50 transition-colors ${
-                      currentLocale === lang.code ? "bg-blue-50" : ""
+                    className={`w-full cursor-pointer ${textColor} flex items-center gap-3 px-4 py-2.5 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors ${
+                      currentLocale === lang.code ? "bg-blue-50 dark:bg-blue-900" : ""
                     }`}
                   >
-                    <span className="text-2xl">{lang.flag}</span>
-                    <span className="text-sm font-medium text-gray-700">
+                    <span className={`text-2xl`}>{lang.flag}</span>
+                    <span className={`${textColor} text-sm font-medium text-gray-700`}>
                       {lang.name}
                     </span>
                     {currentLocale === lang.code && (

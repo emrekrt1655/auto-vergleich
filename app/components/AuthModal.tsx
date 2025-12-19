@@ -20,7 +20,7 @@ const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose }) => {
 
   return ReactDOM.createPortal(
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
-      <div className="bg-black rounded-2xl shadow-xl w-full max-w-sm p-6 relative animate-fadeIn">
+      <div className="dark:bg-neutral-950 bg-white rounded-2xl shadow-xl w-full max-w-sm p-6 relative animate-fadeIn">
         <button
           onClick={onClose}
           className="absolute top-2 right-3 text-gray-500 hover:text-gray-700 text-xl"

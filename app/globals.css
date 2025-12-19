@@ -1,27 +1,64 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
+  /* Tailwind için color tanımları */
+  --color-background: #ffffff;
+  --color-foreground: #171717;
+  
+  /* Dark mode için */
+  --color-background--dark: #0a0a0a;
+  --color-foreground--dark: #ededed;
+  
+  /* Diğer renkler */
   --color-brand-primary: #0EA5E9;
   --color-brand-secondary: #14B8A6;
   --color-brand-accent: #9333EA;
   --color-brand-neutral: #fff;
-  --bg-linear-to-r: linear-gradient(to right, var(--tw-gradient-stops));
+  --color-brand-neutral-dark: #1f2937;
 }
 
+/* CSS değişkenleri (gerekirse başka yerlerde kullanmak için) */
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+:root.dark ::-webkit-scrollbar-thumb {
+  background: #555;
+}
+
+:root.dark ::-webkit-scrollbar-thumb:hover {
+  background: #888;
 }
