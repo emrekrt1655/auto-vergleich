@@ -63,13 +63,13 @@ const Navbar = () => {
             onClick={() => setIsLangOpen(!isLangOpen)}
             className="cursor-pointer flex items-center gap-2 px-3 py-2 rounded-lg  transition-all duration-200 "
           >
-            <Globe className="w-4 h-4 text-gray-600" />
+            <Globe className="w-4 h-4 text-gray-600 dark:text-gray-100" />
             <span className="text-xl">{currentLanguage.flag}</span>
-            <span className="text-sm font-medium text-gray-700">
+            <span className="text-sm font-medium text-gray-700 dark:text-gray-100">
               {currentLanguage.code.toUpperCase()}
             </span>
             <ChevronDown 
-              className={`w-4 h-4 text-gray-600 transition-transform duration-200 ${
+              className={`w-4 h-4 text-gray-600  dark:text-gray-100 transition-transform duration-200 ${
                 isLangOpen ? "rotate-180" : ""
               }`}
             />
@@ -106,7 +106,7 @@ const Navbar = () => {
 
         {user ? (
           <>
-            <span className="text-gray-700 text-sm">
+            <span className="text-gray-700 dark:text-gray-100 text-sm">
               {t("welcome")}, <span className="font-semibold">{userName}</span>
             </span>
             <button

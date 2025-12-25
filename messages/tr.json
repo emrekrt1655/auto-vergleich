@@ -194,6 +194,8 @@
         "vehicle1": "Araç 1",
         "vehicle2": "Araç 2",
         "compareButton": "Karşılaştır",
+        "comparing": "Karşılaştırılıyor...",
+        "loadingResults": "Model sonuçları oluşturuyor...",
         "toast": {
             "missingCars": "Lütfen her iki aracı da doldur!",
             "compareError": "Araçlar karşılaştırılırken bir hata oluştu."

@@ -194,6 +194,8 @@
         "vehicle1": "Vehicle 1",
         "vehicle2": "Vehicle 2",
         "compareButton": "Compare",
+        "comparing": "Comparing...",
+        "loadingResults": "Model creating the results...",
         "toast": {
             "missingCars": "Please fill in both vehicles!",
             "compareError": "Error comparing vehicles."
