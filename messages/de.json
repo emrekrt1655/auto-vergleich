@@ -197,6 +197,7 @@
         "compareButton": "Vergleichen",
         "comparing": "Vergleiche...",
         "loadingResults": "Modell erstellt die Ergebnisse...",
+        "fillBothFormsToCompare": "Bitte fülle beide Formulare aus, um zu vergleichen",
         "toast": {
             "missingCars": "Bitte beide Fahrzeuge ausfüllen!",
             "compareError": "Fehler beim Vergleichen der Fahrzeuge."

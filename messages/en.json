@@ -197,6 +197,7 @@
         "compareButton": "Compare",
         "comparing": "Comparing...",
         "loadingResults": "Model creating the results...",
+        "fillBothFormsToCompare": "Please fill in both forms to compare",
         "toast": {
             "missingCars": "Please fill in both vehicles!",
             "compareError": "Error comparing vehicles."

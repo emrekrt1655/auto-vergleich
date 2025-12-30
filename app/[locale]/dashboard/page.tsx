@@ -18,9 +18,21 @@ export default function DashboardPage() {
 
   const [resultData, setResultData] = useState<any>(null);
   const [isLoading, setIsLoading] = useState(false);
+    const [isFormValid, setIsFormValid] = useState(false);
+
 
   const [car1DefaultValues, setCar1DefaultValues] = useState<any>(null);
   const [car2DefaultValues, setCar2DefaultValues] = useState<any>(null);
+
+  const checkFormsValidity = () => {
+    const car1Data = car1Ref.current?.getFormData();
+    const car2Data = car2Ref.current?.getFormData();
+    
+    const isCar1Valid = car1Data?.brand && car1Data?.model;
+    const isCar2Valid = car2Data?.brand && car2Data?.model;
+    
+    setIsFormValid(!!(isCar1Valid && isCar2Valid));
+  };
 
 
   const handleCompare = async (car1?: any, car2?: any) => {
@@ -82,6 +94,7 @@ export default function DashboardPage() {
     } else {
       setResultData(parsed.result);
     }
+    setTimeout(() => checkFormsValidity(), 600);
   }, []);
 
   useEffect(() => {
@@ -94,6 +107,11 @@ export default function DashboardPage() {
       handleCompare(parsed.car1, parsed.car2);
     }
   }, [locale]);
+
+   useEffect(() => {
+    const interval = setInterval(checkFormsValidity, 1000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="min-h-screen py-16 px-6">
@@ -120,11 +138,16 @@ export default function DashboardPage() {
       <div className="text-center mt-12">
         <button
           onClick={() => handleCompare()}
-          disabled={isLoading}
+          disabled={isLoading || !isFormValid}
           className="bg-brand-primary hover:bg-brand-primary/80 text-white px-6 py-3 rounded-xl font-semibold transition"
         >
           {isLoading ? t("comparing") : t("compareButton")}{" "}
         </button>
+        {!isFormValid && !isLoading && (
+          <p className="text-sm text-gray-500 mt-2">
+            {t("fillBothFormsToCompare")}
+          </p>
+        )}
       </div>
       <div ref={resultsRef}>
         {isLoading && (

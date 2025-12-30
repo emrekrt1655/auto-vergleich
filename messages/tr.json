@@ -197,6 +197,7 @@
         "compareButton": "Karşılaştır",
         "comparing": "Karşılaştırılıyor...",
         "loadingResults": "Model sonuçları oluşturuyor...",
+        "fillBothFormsToCompare": "Karşılaştırmak için lütfen her iki formu da doldurun",
         "toast": {
             "missingCars": "Lütfen her iki aracı da doldur!",
             "compareError": "Araçlar karşılaştırılırken bir hata oluştu."
