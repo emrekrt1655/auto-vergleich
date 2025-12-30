@@ -145,7 +145,8 @@
         },
         "CarSelect": {
             "loading": "Loading ...",
-            "error": "Error while loading "
+            "error": "Error while loading ",
+            "customValueWillBeUsed": "Custom value will be used"
         },
         "CarForm": {
             "labelMarke": "Brand",

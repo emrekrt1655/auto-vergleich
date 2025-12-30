@@ -107,14 +107,14 @@ export default function DashboardPage() {
           <h2 className="text-lg font-semibold mb-4 text-brand-primary">
             {t("vehicle1")}
           </h2>
-          <CarForm ref={car1Ref} />
+          <CarForm ref={car1Ref} defaultValues={car1DefaultValues} />
         </div>
 
         <div className={` ${wrapperColor} p-6 rounded-xl shadow-sm`}>
           <h2 className="text-lg font-semibold mb-4 text-brand-secondary">
             {t("vehicle2")}
           </h2>
-          <CarForm ref={car2Ref} />
+          <CarForm ref={car2Ref} defaultValues={car2DefaultValues} />
         </div>
       </section>
       <div className="text-center mt-12">

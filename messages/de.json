@@ -145,7 +145,8 @@
         },
         "CarSelect": {
             "loading": "Lade ",
-            "error": "Fehler beim Laden der "
+            "error": "Fehler beim Laden der ",
+            "customValueWillBeUsed": "Benutzerdefinierter Wert wird verwendet"
         },
         "CarForm": {
             "labelMarke": "Marke",

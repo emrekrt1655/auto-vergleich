@@ -145,7 +145,8 @@
         },
         "CarSelect": {
             "loading": " yükleniyor...",
-            "error": " yüklenirken bir hata oluştu"
+            "error": " yüklenirken bir hata oluştu",
+            "customValueWillBeUsed": "Özel değer kullanılacak"
         },
         "CarForm": {
             "labelMarke": "Marka",
