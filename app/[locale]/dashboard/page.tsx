@@ -1,6 +1,6 @@
 "use client";
 import CarForm, { CarFormHandle } from "@/app/components/CarForm";
-import { useContext, useRef, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import { ToastContext } from "@/app/(context)/toastContext";
 import Results from "@/app/components/results/Results";
 import { useTranslations, useLocale } from "next-intl";
@@ -19,11 +19,16 @@ export default function DashboardPage() {
   const [resultData, setResultData] = useState<any>(null);
   const [isLoading, setIsLoading] = useState(false);
 
-  const handleCompare = async () => {
-    const car1 = car1Ref.current?.getFormData();
-    const car2 = car2Ref.current?.getFormData();
+  const [car1DefaultValues, setCar1DefaultValues] = useState<any>(null);
+  const [car2DefaultValues, setCar2DefaultValues] = useState<any>(null);
 
-    if (!car1 || !car2) {
+
+  const handleCompare = async (car1?: any, car2?: any) => {
+
+    const car1Data = car1 || car1Ref.current?.getFormData();
+    const car2Data = car2 || car2Ref.current?.getFormData();
+
+    if (!car1Data || !car2Data) {
       setToast({ message: t("toast.missingCars"), type: "error" });
       return;
     }
@@ -42,18 +47,53 @@ export default function DashboardPage() {
       const response = await fetch("/api/cars/compare", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ car1, car2, locale }),
+        body: JSON.stringify({ car1: car1Data, car2: car2Data, locale }),
       });
 
       const data = await response.json();
       setResultData(data.result);
+      sessionStorage.setItem(
+        "lastComparison",
+        JSON.stringify({  car1: car1Data,
+          car2: car2Data, locale, result: data.result })
+      );
       console.log("AI Vergleich:", data.result);
     } catch (error) {
       setToast({ message: t("toast.missingCars"), type: "error" });
     } finally {
+      8;
       setIsLoading(false);
     }
   };
+
+ useEffect(() => {
+    const lastComparison = sessionStorage.getItem("lastComparison");
+    if (!lastComparison) return;
+
+    const parsed = JSON.parse(lastComparison);
+    
+    setCar1DefaultValues(parsed.car1);
+    setCar2DefaultValues(parsed.car2);
+
+    if (parsed.locale !== locale) {
+      setTimeout(() => {
+        handleCompare(parsed.car1, parsed.car2);
+      }, 500);
+    } else {
+      setResultData(parsed.result);
+    }
+  }, []);
+
+  useEffect(() => {
+    const lastComparison = sessionStorage.getItem("lastComparison");
+    if (!lastComparison) return;
+
+    const parsed = JSON.parse(lastComparison);
+    
+    if (parsed.locale && parsed.locale !== locale) {
+      handleCompare(parsed.car1, parsed.car2);
+    }
+  }, [locale]);
 
   return (
     <div className="min-h-screen py-16 px-6">
@@ -79,7 +119,7 @@ export default function DashboardPage() {
       </section>
       <div className="text-center mt-12">
         <button
-          onClick={handleCompare}
+          onClick={() => handleCompare()}
           disabled={isLoading}
           className="bg-brand-primary hover:bg-brand-primary/80 text-white px-6 py-3 rounded-xl font-semibold transition"
         >

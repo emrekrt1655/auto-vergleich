@@ -9,5 +9,6 @@ type FormState = {
   inspectionDate: string;
   usageYears: string;
   annualKm: string;
+  km: string;
   purchasePrice: string;
 };
